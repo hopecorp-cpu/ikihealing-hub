@@ -1,6 +1,6 @@
 # IKIHEALING Hub
 
-Hệ điều hành nội bộ cho doanh nghiệp nhỏ bán lẻ ở Việt Nam (khoảng 5 đến 50 người). Một chỗ gom chấm công, lương, KPI, việc, khách, đơn hàng, nội dung, quảng cáo, báo cáo và một đội trợ lý AI chạy nền.
+Hệ điều hành nội bộ cho doanh nghiệp kinh doanh, từ đội vài người tới công ty hàng nghìn nhân sự. Một chỗ gom chấm công, lương, KPI, việc, khách, đơn hàng, nội dung, quảng cáo, báo cáo và một đội trợ lý AI chạy nền.
 
 Phần mềm được tách ra từ hệ thống một công ty đang vận hành thật. Toàn bộ dữ liệu, tên người, giá bán và cấu hình riêng đã được thay bằng dữ liệu mẫu. Công ty mẫu trong code tên là **ACME Corp**, thương hiệu bán lẻ là **NOVA**, sản phẩm là **Sản phẩm A, B, C**. Bạn đổi các tên này thành của mình.
 
