@@ -135,6 +135,19 @@ const SOURCES: { key: string; label: string; maxHours: number; fix: string; opti
   { key: "shopee_token_last", label: "Shopee — làm mới token (mỗi giờ, access sống 4h)", maxHours: 3, optional: true, fix: "mở /api/cron/shopee-token-refresh?force=1&key=<CRON_SECRET>; refresh token chết (30 ngày) thì mở /api/shopee/uy-quyen uỷ quyền lại" },
 ];
 
+const MAY_VAN_PHONG = /máy Mac|máy CEO|iMac|launchctl|launchd|Claude lái Chrome|Claude in Chrome/i;
+
+function banCaiMoi(h: SourceHealth): SourceHealth {
+  if (h.ok) return h;
+  if (/thiếu [A-Z][A-Z0-9_]{3,}|THIẾU env|chưa cấu hình|chưa đặt [A-Z]|chưa có token|không có token/i.test(h.note)) {
+    return { ...h, ok: true, tat: true, note: `chưa cấu hình (${h.note})` };
+  }
+  if (h.ageHours == null && /chưa từng|sổ rỗng|chưa có|chưa chạy lần nào/i.test(h.note)) {
+    return { ...h, ok: true, tat: true, note: "chờ lần chạy đầu" };
+  }
+  return h;
+}
+
 async function checkWebAlive(): Promise<SourceHealth> {
   const url = `${APP_URL}/login`;
   const base: Omit<SourceHealth, "ok" | "note"> = {
@@ -314,7 +327,7 @@ export async function checkAllSources(): Promise<SourceHealth[]> {
       key: "bo_bai_doi_tac_day", label: "Đẩy bộ bài đối tác sang app CTV",
       ageHours: h, maxHours: 3, ok: h != null && h <= 3 && st?.ok !== false,
       note: st ? (st.ok === false ? `lỗi: ${st.loi}` : `đang hiện ${st.bai ?? 0} bài trên app CTV`) : "chưa chạy lần nào",
-      fix: "mở /api/cron/day-bai-doi-tac?key=<CRON_SECRET>&dry=1; thiếu AFF_* trên Vercel hoặc app nova-ctv chưa có /api/nhap-bai",
+      fix: "mở /api/cron/day-bai-doi-tac?key=<CRON_SECRET>&dry=1; thiếu AFF_* trên Vercel hoặc app cộng tác viên chưa có /api/nhap-bai",
     });
   } catch { }
 
@@ -614,7 +627,7 @@ export async function checkAllSources(): Promise<SourceHealth[]> {
   out.push(...(await capiP));
 
   DOC_SAN.delete(sb);
-  return out;
+  return out.filter((h) => !MAY_VAN_PHONG.test(`${h.label} ${h.fix}`)).map(banCaiMoi);
 }
 
 async function checkMetaCapi(sb: any): Promise<SourceHealth[]> {

@@ -60,7 +60,7 @@ export async function buildMachineBoard(): Promise<{ rows: MachineRow[]; okCount
     try { const m = aiCost || {}; return m[vnDateStr()]?.vnd || 0; } catch { return 0; }
   })();
 
-  const rows: MachineRow[] = [
+  const rows: MachineRow[] = ([
     {
       name: "Bản tin sáng cố vấn", what: "Đọc P&L, cảnh báo, nhịp hòa vốn rồi nhắn CEO", schedule: "7:54 hằng ngày", where: "server",
       lastRun: null, ageHours: null, ok: null,
@@ -166,7 +166,8 @@ export async function buildMachineBoard(): Promise<{ rows: MachineRow[]; okCount
       output: liveCampaign ? `${(liveCampaign.items || []).filter((i: any) => i.status === "xong").length}/${(liveCampaign.items || []).length} việc xong` : "Chưa có chiến dịch nào chạy",
       fix: "xem trang Chiến dịch Live",
     },
-  ];
+  ] as MachineRow[]).filter((r) => r.where !== "may-mac")
+    .map((r) => (r.ok === false && r.lastRun == null ? { ...r, ok: null } : r));
 
   return {
     rows,
