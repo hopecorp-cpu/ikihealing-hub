@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dịch họp ACME</title>
+<style>
+  :root { --nen:#f4f6fa; --the:#ffffff; --vien:#e3e7ef; --chu:#1b2333; --phu:#6b7488; --xanh:#2563eb; --xanh-nhat:#e8efff; --luc:#16a34a; --do:#dc2626; --cam:#d97706; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.5 -apple-system, "SF Pro Text", "Segoe UI", Roboto, sans-serif; color:var(--chu); background:var(--nen); }
+  .khung { display:flex; min-height:100vh; }
+  nav { width:200px; background:var(--the); border-right:1px solid var(--vien); padding:16px 12px; display:flex; flex-direction:column; gap:4px; }
+  nav .ten { font-weight:700; font-size:16px; padding:4px 10px 14px; }
+  nav .ten span { color:var(--xanh); }
+  nav button { text-align:left; border:0; background:none; padding:9px 10px; border-radius:6px; font:inherit; color:var(--chu); cursor:pointer; }
+  nav button.chon { background:var(--xanh-nhat); color:var(--xanh); font-weight:600; }
+  main { flex:1; padding:20px 24px; max-width:1100px; }
+  .trang { display:none; } .trang.hien { display:block; }
+  .thanh { display:flex; align-items:center; gap:18px; background:var(--the); border:1px solid var(--vien); border-radius:8px; padding:14px 18px; }
+  .cham { width:10px; height:10px; border-radius:50%; background:#c4c9d4; display:inline-block; }
+  .cham.chay { background:var(--luc); } .cham.loi { background:var(--do); } .cham.cho { background:var(--cam); }
+  .trangthai { font-weight:600; font-size:16px; display:flex; align-items:center; gap:8px; }
+  .nho { color:var(--phu); font-size:13px; }
+  .gian { flex:1; }
+  .nut { border:1px solid var(--vien); background:var(--the); padding:8px 16px; border-radius:6px; font:inherit; font-weight:600; cursor:pointer; color:var(--chu); }
+  .nut.chinh { background:var(--xanh); border-color:var(--xanh); color:#fff; }
+  .nut.dung { background:var(--chu); border-color:var(--chu); color:#fff; }
+  .nut:disabled { opacity:.5; cursor:default; }
+  .hai { display:grid; grid-template-columns:1fr 1fr; gap:14px; margin-top:14px; }
+  .the { background:var(--the); border:1px solid var(--vien); border-radius:8px; padding:14px 16px; }
+  .dau { display:flex; align-items:center; gap:10px; margin-bottom:10px; }
+  .dau b { font-size:15px; }
+  .nhan { font-size:12px; font-weight:600; color:var(--xanh); background:var(--xanh-nhat); padding:2px 8px; border-radius:4px; }
+  .muc { flex:1; height:6px; background:#eef1f6; border-radius:3px; overflow:hidden; }
+  .muc i { display:block; height:100%; width:0; background:var(--luc); transition:width .08s; }
+  .chedo { display:grid; grid-template-columns:1fr 1fr; border:1px solid var(--vien); border-radius:6px; overflow:hidden; margin-bottom:10px; }
+  .chedo button { border:0; background:var(--the); padding:10px 8px; font:inherit; font-weight:600; cursor:pointer; color:var(--phu); }
+  .chedo button + button { border-left:1px solid var(--vien); }
+  .chedo button.bat { background:var(--xanh); color:#fff; }
+  .chedo button.thang.bat { background:var(--cam); }
+  .chongiong { display:grid; grid-template-columns:auto 1fr 1fr; align-items:center; gap:0; border:1px solid var(--vien); border-radius:6px; overflow:hidden; margin-bottom:10px; }
+  .chongiong span { padding:0 10px; font-size:12px; color:var(--phu); white-space:nowrap; }
+  .chongiong button { border:0; border-left:1px solid var(--vien); background:var(--the); padding:8px; font:inherit; font-size:13px; font-weight:600; cursor:pointer; color:var(--phu); }
+  .chongiong button.bat { background:var(--xanh-nhat); color:var(--xanh); }
+  .goiy { font-size:12.5px; color:var(--phu); margin:0 0 10px; min-height:19px; }
+  label.o { display:block; font-size:12px; color:var(--phu); margin-top:8px; }
+  select, input[type=text], textarea { width:100%; margin-top:3px; padding:7px 9px; border:1px solid var(--vien); border-radius:6px; font:inherit; background:#fff; color:var(--chu); }
+  .boicanh { margin-top:14px; }
+  .loidich { margin-top:14px; background:var(--the); border:1px solid var(--vien); border-radius:8px; padding:6px 16px; max-height:52vh; overflow:auto; }
+  .dong { display:grid; grid-template-columns:54px 1fr; gap:10px; padding:10px 0; border-bottom:1px solid #f0f2f6; }
+  .dong:last-child { border-bottom:0; }
+  .dong .gio { font-size:12px; color:var(--phu); }
+  .dong .ai { font-size:11px; font-weight:700; color:var(--phu); }
+  .dong.toi .ai { color:var(--xanh); }
+  .dong .dich { font-size:15px; }
+  .dong .goc { font-size:13px; color:var(--phu); }
+  .dong.dang { opacity:.65; }
+  .trong { color:var(--phu); padding:24px 0; text-align:center; }
+  .phim { font-size:12px; color:var(--phu); margin-top:8px; }
+  kbd { border:1px solid var(--vien); border-bottom-width:2px; border-radius:4px; padding:0 5px; font:inherit; font-size:11px; background:#fff; }
+  .ls { display:flex; justify-content:space-between; align-items:center; padding:10px 0; border-bottom:1px solid #f0f2f6; }
+  .baoloi { margin-top:10px; padding:10px 12px; border-radius:6px; background:#fdecec; color:#9b1c1c; display:none; }
+  .bangtt { width:100%; border-collapse:collapse; font-size:13px; }
+  .bangtt th { text-align:left; font-weight:600; color:var(--phu); font-size:12px; padding:4px 6px; }
+  .bangtt td { padding:6px; border-top:1px solid #f0f2f6; }
+  .tot { color:var(--luc); font-weight:600; } .xau { color:var(--do); font-weight:600; } .vua { color:var(--cam); font-weight:600; }
+  h2 { font-size:18px; margin:4px 0 14px; }
+  .huongdan li { margin-bottom:6px; }
+</style>
+</head>
+<body>
+<div class="khung">
+  <nav>
+    <div class="ten">Dịch họp <span>ACME</span></div>
+    <button data-trang="phien" class="chon">Phiên dịch</button>
+    <button data-trang="lichsu">Lịch sử</button>
+    <button data-trang="caidat">Cài đặt</button>
+  </nav>
+  <main>
+    <section id="phien" class="trang hien">
+      <div class="thanh">
+        <span class="trangthai"><span class="cham" id="cham"></span><span id="tt">Chưa chạy</span></span>
+        <span class="nho" id="dongho">00:00</span>
+        <span class="nho" id="ttphu"></span>
+        <span class="nho" id="khoaMic" style="color:var(--cam); font-weight:700"></span>
+        <span class="gian"></span>
+        <button class="nut chinh" id="nutChay">Bắt đầu</button>
+      </div>
+      <div class="baoloi" id="baoloi"></div>
+
+      <div class="hai">
+        <div class="the" id="theToi">
+          <div class="dau"><b>Tôi</b><span class="nhan" id="nhanToi">VI → EN</span><span class="muc"><i id="mucToi"></i></span></div>
+          <div class="chedo">
+            <button data-vai="toi" data-dich="1" class="bat">Dịch giúp tôi</button>
+            <button data-vai="toi" data-dich="0" class="thang">Tôi tự nói tiếng Anh</button>
+          </div>
+          <div class="chongiong">
+            <span>Giọng đọc của tôi</span>
+            <button type="button" data-gioi="nam">Giọng nam</button>
+            <button type="button" data-gioi="nu">Giọng nữ</button>
+          </div>
+          <p class="goiy" id="goiyToi"></p>
+          <label class="o">Micro của tôi<select id="micToi"></select></label>
+          <label class="o">Phát bản dịch vào (micro ảo cho Zoom/Meet)<select id="raToi"></select></label>
+        </div>
+        <div class="the" id="theDoiTac">
+          <div class="dau"><b>Đối tác</b><span class="nhan" id="nhanDoiTac">EN → VI</span><span class="muc"><i id="mucDoiTac"></i></span></div>
+          <div class="chedo">
+            <button data-vai="doitac" data-dich="1" class="bat">Dịch cho tôi nghe</button>
+            <button data-vai="doitac" data-dich="0" class="thang">Nghe tiếng gốc</button>
+          </div>
+          <p class="goiy" id="goiyDoiTac"></p>
+          <label class="o">Lấy tiếng đối tác từ<select id="nguonDoiTac"></select></label>
+          <label class="o">Tôi nghe bản dịch qua<select id="raDoiTac"></select></label>
+        </div>
+      </div>
+      <div class="the" id="tinhTrang" style="margin-top:14px; display:none">
+        <div class="dau"><b>Tình trạng 2 đầu</b><span class="nho">cập nhật mỗi giây, tải nhật ký ở trang Lịch sử</span></div>
+        <table class="bangtt">
+          <tr><th></th><th>Kết nối dịch</th><th>Tiếng vào</th><th>Bản dịch gần nhất</th><th>Hàng chờ phát</th><th>Nối lại</th></tr>
+          <tr id="ttToi"><td><b>Tôi</b></td><td></td><td></td><td></td><td></td><td></td></tr>
+          <tr id="ttDoiTac"><td><b>Đối tác</b></td><td></td><td></td><td></td><td></td><td></td></tr>
+        </table>
+      </div>
+      <div class="phim">Phím tắt khi đang đứng ở trang này: <kbd>T</kbd> bật/tắt dịch phần Tôi, <kbd>D</kbd> bật/tắt dịch phần Đối tác.</div>
+
+      <div class="the" style="margin-top:14px">
+        <div class="dau"><b>Thử một mình</b><span class="nho">chưa cần đối tác nước ngoài</span></div>
+        <p class="goiy" style="margin-bottom:8px">Bấm "Bắt đầu thử": máy đóng vai đối tác nói tiếng nước ngoài để anh nghe bản dịch tiếng Việt; anh nói tiếng Việt thì nghe bản dịch của mình qua loa. Không gửi gì sang Zoom/Meet.</p>
+        <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center">
+          <button class="nut chinh" id="nutThu">Bắt đầu thử</button>
+          <button class="nut" id="nutGiaNoi" disabled>Đối tác giả nói câu tiếp</button>
+          <input type="text" id="cauGia" placeholder="Hoặc gõ câu muốn đối tác giả nói (tiếng Việt hay tiếng Anh đều được)" style="flex:1; min-width:260px; margin-top:0">
+        </div>
+        <label class="o"><input type="checkbox" id="tuNghe"> Nghe bản dịch của tôi qua loa/tai nghe thay vì gửi vào VB-Cable</label>
+      </div>
+
+      <div class="boicanh">
+        <label class="o">Bối cảnh cuộc họp và thuật ngữ (giúp dịch đúng tên riêng, con số)
+          <input type="text" id="boiCanh" placeholder="Ví dụ: Họp nhà đầu tư Mahesh, gọi vốn vòng seed, sản phẩm Đạm Mẫu Protein, Trà Mẫu A, app NOVA">
+        </label>
+      </div>
+
+      <div class="loidich" id="loiDich"><div class="trong">Bấm Bắt đầu, lời nói hai bên và bản dịch sẽ hiện ở đây.</div></div>
+    </section>
+
+    <section id="lichsu" class="trang">
+      <h2>Lịch sử cuộc họp</h2>
+      <p class="nho" style="margin:-6px 0 12px">Lịch sử và nhật ký chỉ lưu trong trình duyệt của máy này, không gửi lên máy chủ. <button class="nut" id="nutTaiNhatKy" style="margin-left:6px">Tải nhật ký kỹ thuật</button></p>
+      <div class="the" id="dsLichSu"></div>
+      <div class="the" id="xemLichSu" style="margin-top:14px; display:none"></div>
+    </section>
+
+    <section id="caidat" class="trang">
+      <h2>Cài đặt</h2>
+      <div class="the">
+        <label class="o">Ngôn ngữ của đối tác
+          <select id="ngonNgu">
+            <option value="English">Tiếng Anh</option>
+            <option value="Japanese">Tiếng Nhật</option>
+            <option value="Mandarin Chinese">Tiếng Trung</option>
+            <option value="Korean">Tiếng Hàn</option>
+          </select>
+        </label>
+        <label class="o">Giọng đọc bản dịch của tôi (đối tác nghe)</label>
+        <div style="display:flex; gap:8px; align-items:center">
+          <select id="giongToi" style="flex:1"></select>
+          <button class="nut" id="nutNgheGiong" type="button" style="margin-top:3px">Nghe thử giọng</button>
+        </div>
+        <label class="o">Giọng đọc bản dịch cho tôi nghe<select id="giongDoiTac"></select></label>
+        <label class="o"><input type="checkbox" id="tatGoc" checked> Khi lấy tiếng từ tab Chrome: tắt tiếng gốc của tab, chỉ nghe bản dịch</label>
+        <label class="o"><input type="checkbox" id="loaNgoai" checked> Không đeo tai nghe (nghe qua loa máy): tạm khoá micro của tôi lúc đối tác đang nói và lúc đang đọc bản dịch, để tiếng loa không bị dịch ngược sang đối tác</label>
+      </div>
+      <div class="the huongdan" style="margin-top:14px">
+        <b>Cách nối với Zoom / Google Meet</b>
+        <ol>
+          <li>Trong Zoom/Meet, chọn <b>Micro = VB-Cable</b>. Đối tác sẽ nghe giọng dịch (hoặc giọng anh khi bấm "Tôi tự nói tiếng Anh").</li>
+          <li>Ở ô "Phát bản dịch vào" chọn <b>VB-Cable</b>. Ô "Micro của tôi" chọn micro thật (tai nghe/micro rời).</li>
+          <li>Tiếng đối tác: nên họp bằng Google Meet hoặc Zoom trên Chrome, chọn nguồn "Chia sẻ tab Chrome" rồi chọn đúng tab họp, nhớ tích "Chia sẻ âm thanh".</li>
+          <li>Đeo tai nghe để micro không thu lại tiếng loa.</li>
+        </ol>
+      </div>
+    </section>
+  </main>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

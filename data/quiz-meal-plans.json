@@ -1,0 +1,123 @@
+{
+  "_note": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "KHIHU": {
+    "ten": "Nội dung mẫu",
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "ngay": [
+      {
+        "d": 1,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      },
+      {
+        "d": 2,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      }
+    ]
+  },
+  "DAMTHAP": {
+    "ten": "Nội dung mẫu",
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "ngay": [
+      {
+        "d": 1,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      },
+      {
+        "d": 2,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      }
+    ]
+  },
+  "CANUAT": {
+    "ten": "Nội dung mẫu",
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "ngay": [
+      {
+        "d": 1,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      },
+      {
+        "d": 2,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      }
+    ]
+  },
+  "HAN": {
+    "ten": "Nội dung mẫu",
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "ngay": [
+      {
+        "d": 1,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      },
+      {
+        "d": 2,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      }
+    ]
+  },
+  "NHIET": {
+    "ten": "Nội dung mẫu",
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "ngay": [
+      {
+        "d": 1,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      },
+      {
+        "d": 2,
+        "sang": "Nội dung mẫu",
+        "trua": "Nội dung mẫu",
+        "toi": "Nội dung mẫu",
+        "phu": "Nội dung mẫu"
+      }
+    ]
+  }
+}

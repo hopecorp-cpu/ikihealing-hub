@@ -1,0 +1,120 @@
+{
+  "_doc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "_viSaoCoFileNay": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "_luatBatBien": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ],
+  "_nguonDuyNhat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "capNhat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "cum": [
+    {
+      "id": "phu-nu-dam-thuc-te",
+      "_viSao": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu",
+      "giaNiemYet": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "thanhPhan": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "tuKhoaGoc": "Nội dung mẫu",
+      "raoRieng": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "truCot": {
+        "slug": "Nội dung mẫu",
+        "title": "Nội dung mẫu",
+        "tuKhoa": "Nội dung mẫu",
+        "categoryKey": "dinh-duong",
+        "yDinh": "Nội dung mẫu",
+        "angle": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      },
+      "nhanh": [
+        {
+          "slug": "Nội dung mẫu",
+          "title": "Nội dung mẫu",
+          "tuKhoa": "Nội dung mẫu",
+          "categoryKey": "thoi-quen",
+          "yDinh": "Nội dung mẫu",
+          "angle": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        },
+        {
+          "slug": "Nội dung mẫu",
+          "title": "Nội dung mẫu",
+          "tuKhoa": "Nội dung mẫu",
+          "categoryKey": "thoi-quen",
+          "yDinh": "Nội dung mẫu",
+          "angle": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ]
+    },
+    {
+      "id": "phu-nu-lan-da",
+      "_viSao": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu",
+      "giaNiemYet": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "thanhPhan": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "tuKhoaGoc": "Nội dung mẫu",
+      "raoRieng": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "truCot": {
+        "slug": "an-gi-de-da-dep",
+        "title": "Nội dung mẫu",
+        "tuKhoa": "Nội dung mẫu",
+        "categoryKey": "dinh-duong",
+        "yDinh": "Nội dung mẫu",
+        "angle": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "anh": [
+          "Nội dung mẫu",
+          "Nội dung mẫu"
+        ],
+        "linkXuong": [
+          "dam-va-lan-da-toc-mong",
+          "da-kho-thieu-chat-gi"
+        ]
+      },
+      "nhanh": [
+        {
+          "slug": "dam-va-lan-da-toc-mong",
+          "title": "Nội dung mẫu",
+          "tuKhoa": "Nội dung mẫu",
+          "categoryKey": "dinh-duong",
+          "yDinh": "Nội dung mẫu",
+          "angle": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "anh": [
+            "Nội dung mẫu",
+            "Nội dung mẫu"
+          ]
+        },
+        {
+          "slug": "da-kho-thieu-chat-gi",
+          "title": "Nội dung mẫu",
+          "tuKhoa": "Nội dung mẫu",
+          "categoryKey": "dinh-duong",
+          "yDinh": "Nội dung mẫu",
+          "angle": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "anh": [
+            "Nội dung mẫu",
+            "Nội dung mẫu"
+          ]
+        }
+      ]
+    }
+  ],
+  "_daBo": [
+    {
+      "slug": "Nội dung mẫu",
+      "title": "Nội dung mẫu",
+      "cum": "phu-nu-dam-thuc-te",
+      "ngayBo": "2026-09-21",
+      "lyDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "slug": "Nội dung mẫu",
+      "title": "Nội dung mẫu",
+      "cum": "phu-nu-tra-nhip-song",
+      "ngayBo": "2026-09-21",
+      "lyDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ]
+}

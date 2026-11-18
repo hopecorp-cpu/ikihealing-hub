@@ -1,0 +1,29 @@
+{
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "items": [
+    {
+      "key": "sale-process",
+      "title": "Nội dung mẫu",
+      "dept": "Nội dung mẫu",
+      "icon": "💼",
+      "link": "/playbook",
+      "purpose": "Nội dung mẫu",
+      "steps": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ]
+    },
+    {
+      "key": "after-sale",
+      "title": "Nội dung mẫu",
+      "dept": "CSKH",
+      "icon": "🤝",
+      "link": "/cham-soc-kh",
+      "purpose": "Nội dung mẫu",
+      "steps": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ]
+    }
+  ]
+}

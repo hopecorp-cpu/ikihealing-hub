@@ -1,0 +1,331 @@
+{
+  "source": "Nội dung mẫu",
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "promo": {
+    "gift": "Nội dung mẫu",
+    "deadline": "Nội dung mẫu",
+    "note": "Nội dung mẫu"
+  },
+  "compliance": [
+    "Nội dung mẫu",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ],
+  "products": [
+    {
+      "name": "Nội dung mẫu",
+      "price": "Nội dung mẫu",
+      "note": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "use": "Nội dung mẫu"
+    },
+    {
+      "name": "Nội dung mẫu",
+      "price": "168.000đ/hộp",
+      "note": "Nội dung mẫu",
+      "use": "Nội dung mẫu"
+    }
+  ],
+  "hotCriteria": [
+    "Nội dung mẫu",
+    "Nội dung mẫu"
+  ],
+  "phoneRules": [
+    "Nội dung mẫu",
+    "Nội dung mẫu"
+  ],
+  "phoneCapture": [
+    {
+      "situation": "Nội dung mẫu",
+      "message": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "note": "Nội dung mẫu"
+    },
+    {
+      "situation": "Nội dung mẫu",
+      "message": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "note": "Nội dung mẫu"
+    }
+  ],
+  "callback": {
+    "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "steps": [
+      {
+        "step": "Nội dung mẫu",
+        "action": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "note": "Nội dung mẫu"
+      },
+      {
+        "step": "Nội dung mẫu",
+        "action": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "note": "Nội dung mẫu"
+      }
+    ]
+  },
+  "painScripts": [
+    {
+      "pain": "Nội dung mẫu",
+      "combo": "Nội dung mẫu",
+      "questions": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "steps": [
+        {
+          "n": "Nội dung mẫu",
+          "say": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "branch": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        },
+        {
+          "n": "Nội dung mẫu",
+          "say": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "branch": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ],
+      "objections": [
+        {
+          "q": "Nội dung mẫu",
+          "a": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        },
+        {
+          "q": "Nội dung mẫu",
+          "a": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ],
+      "closes": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "notes": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ]
+    },
+    {
+      "pain": "Nội dung mẫu",
+      "combo": "Nội dung mẫu",
+      "questions": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "steps": [
+        {
+          "n": "Nội dung mẫu",
+          "say": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "branch": "Nội dung mẫu"
+        },
+        {
+          "n": "Nội dung mẫu",
+          "say": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "branch": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ],
+      "objections": [
+        {
+          "q": "Nội dung mẫu",
+          "a": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        },
+        {
+          "q": "Nội dung mẫu",
+          "a": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ],
+      "closes": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "notes": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu"
+      ]
+    }
+  ],
+  "objections": {
+    "formula": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "items": [
+      {
+        "objection": "Nội dung mẫu",
+        "real": "Nội dung mẫu",
+        "answer": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      },
+      {
+        "objection": "Nội dung mẫu",
+        "real": "Nội dung mẫu",
+        "answer": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      }
+    ]
+  },
+  "zaloTemplates": [
+    {
+      "tag": "Nội dung mẫu",
+      "message": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "tag": "Nội dung mẫu",
+      "message": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ],
+  "kpi": [
+    {
+      "metric": "Nội dung mẫu",
+      "target": "40–60",
+      "note": "Nội dung mẫu"
+    },
+    {
+      "metric": "Nội dung mẫu",
+      "target": "15–25",
+      "note": "Nội dung mẫu"
+    }
+  ],
+  "report": [
+    "Nội dung mẫu",
+    "Nội dung mẫu"
+  ],
+  "rollout": [
+    {
+      "when": "Nội dung mẫu",
+      "task": "Nội dung mẫu",
+      "who": "Nội dung mẫu"
+    },
+    {
+      "when": "Nội dung mẫu",
+      "task": "Nội dung mẫu",
+      "who": "Nội dung mẫu"
+    }
+  ],
+  "tracking": {
+    "note": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "columns": [
+      "Ngày/Sale",
+      "Nội dung mẫu"
+    ]
+  },
+  "disc": {
+    "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "chuKy": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "nhanDien": [
+      {
+        "nhom": "Nội dung mẫu",
+        "viet": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "tinHieu": "Nội dung mẫu"
+      },
+      {
+        "nhom": "Nội dung mẫu",
+        "viet": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "tinHieu": "Nội dung mẫu"
+      }
+    ],
+    "cauDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "docKetQua": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "banDo": [
+      {
+        "muc": "Nội dung mẫu",
+        "D": "Nội dung mẫu",
+        "I": "Nội dung mẫu",
+        "S": "Nội dung mẫu",
+        "C": "Nội dung mẫu"
+      },
+      {
+        "muc": "Nội dung mẫu",
+        "D": "Nội dung mẫu",
+        "I": "Nội dung mẫu",
+        "S": "Nội dung mẫu",
+        "C": "Nội dung mẫu"
+      }
+    ],
+    "luuYDoiMinh": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "buoc7": [
+      {
+        "buoc": "Nội dung mẫu",
+        "D": "Nội dung mẫu",
+        "I": "Nội dung mẫu",
+        "S": "Nội dung mẫu",
+        "C": "Nội dung mẫu"
+      },
+      {
+        "buoc": "Nội dung mẫu",
+        "D": "Nội dung mẫu",
+        "I": "Nội dung mẫu",
+        "S": "Nội dung mẫu",
+        "C": "Nội dung mẫu"
+      }
+    ],
+    "kichBan": [
+      {
+        "nhom": "Nội dung mẫu",
+        "nguyenTac": "Nội dung mẫu",
+        "loiThoai": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "luuY": [
+          "Nội dung mẫu",
+          "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        ],
+        "cauChot": "Nội dung mẫu",
+        "cam": "Nội dung mẫu"
+      },
+      {
+        "nhom": "Nội dung mẫu",
+        "nguyenTac": "Nội dung mẫu",
+        "loiThoai": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "luuY": [
+          "Nội dung mẫu",
+          "Nội dung mẫu"
+        ],
+        "cauChot": "Nội dung mẫu",
+        "cam": "Nội dung mẫu"
+      }
+    ],
+    "phanDoi": [
+      {
+        "ten": "Nội dung mẫu",
+        "luat": "Nội dung mẫu",
+        "tra": {
+          "D": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "I": "Nội dung mẫu",
+          "S": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "C": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        },
+        "canhBao": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      },
+      {
+        "ten": "Nội dung mẫu",
+        "luat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "tra": {
+          "D": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "I": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "S": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "C": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        },
+        "canhBao": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      }
+    ],
+    "raoPhapLy": [
+      {
+        "hoi": "Nội dung mẫu",
+        "khong": "Nội dung mẫu",
+        "duoc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      },
+      {
+        "hoi": "Nội dung mẫu",
+        "khong": "Nội dung mẫu",
+        "duoc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      }
+    ],
+    "raoLuuY": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "ghiNhan": [
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    ],
+    "doLuong": [
+      {
+        "do": "Nội dung mẫu",
+        "homNay": "Nội dung mẫu",
+        "dich": "Nội dung mẫu"
+      },
+      {
+        "do": "Nội dung mẫu",
+        "homNay": "Nội dung mẫu",
+        "dich": "Nội dung mẫu"
+      }
+    ],
+    "doBangMay": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "_ghiChuKiemTuCam": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "_nguonDuyNhat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  }
+}

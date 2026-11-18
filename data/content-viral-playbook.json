@@ -1,0 +1,118 @@
+{
+  "version": "1.0",
+  "capNhat": "2026-09-24",
+  "ten": "Nội dung mẫu",
+  "nguon": {
+    "hocTu": [
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    ],
+    "trangThai": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuYBanQuyen": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  },
+  "yeuToLanToa": {
+    "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "dungTot": [
+      {
+        "ten": "Nội dung mẫu",
+        "cachDung": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      },
+      {
+        "ten": "Nội dung mẫu",
+        "cachDung": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      }
+    ],
+    "camDung": [
+      {
+        "ten": "Nội dung mẫu",
+        "lyDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      },
+      {
+        "ten": "Sốc",
+        "lyDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      }
+    ]
+  },
+  "hookBaGiay": {
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "mauDung": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "mauCam": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ]
+  },
+  "congThucTieuDe": {
+    "nguyenTac": "Nội dung mẫu",
+    "khung": [
+      "Nội dung mẫu",
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    ],
+    "camTrongTieuDe": [
+      "chữa",
+      "trị"
+    ]
+  },
+  "khungKeChuyen": {
+    "nguon": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "camDungTrucTiep": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "cauTruc": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "namLoaiChuyenCanCo": [
+      {
+        "loai": "Nội dung mẫu",
+        "muc": "Nội dung mẫu",
+        "viDuACME": "Nội dung mẫu"
+      },
+      {
+        "loai": "Nội dung mẫu",
+        "muc": "Nội dung mẫu",
+        "viDuACME": "Nội dung mẫu"
+      }
+    ]
+  },
+  "ngonTu": {
+    "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "giuLai": [
+      "Nội dung mẫu",
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    ],
+    "boDi": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ]
+  },
+  "nhipDang": {
+    "nguyenTac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "phanBoTheoPhieu": {
+      "TOFU": "Nội dung mẫu",
+      "MOFU": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "BOFU": "Nội dung mẫu"
+    }
+  },
+  "raoBatBuoc": [
+    "Nội dung mẫu",
+    "Nội dung mẫu"
+  ],
+  "longTinHonChuY": {
+    "_ghiChuNguoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "yKhoiDau": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "viSaoBayGio": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "thuKhongDanDungDuoc": [
+      "Nội dung mẫu",
+      "Nội dung mẫu"
+    ],
+    "apVaoACME": {
+      "anhKenhNhanVat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "video": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "baiVietFanpage": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "caiKhongDoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    "soCuaMinhNoiGiongVay": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "canhBaoDocSai": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  }
+}

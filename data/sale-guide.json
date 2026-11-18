@@ -1,0 +1,65 @@
+{
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "principles": [
+    {
+      "icon": "💰",
+      "title": "Nội dung mẫu",
+      "desc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "icon": "⏰",
+      "title": "Nội dung mẫu",
+      "desc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ],
+  "routine": [
+    {
+      "when": "Nội dung mẫu",
+      "time": "Nội dung mẫu",
+      "steps": [
+        {
+          "label": "Nội dung mẫu",
+          "href": "/brief",
+          "desc": "Nội dung mẫu"
+        },
+        {
+          "label": "Nội dung mẫu",
+          "href": "/sales/checklist",
+          "desc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ]
+    },
+    {
+      "when": "Nội dung mẫu",
+      "time": "Nội dung mẫu",
+      "steps": [
+        {
+          "label": "Nội dung mẫu",
+          "href": "/danh-ba-khach",
+          "desc": "Nội dung mẫu"
+        },
+        {
+          "label": "Nội dung mẫu",
+          "href": "/cham-soc-kh",
+          "desc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ]
+    }
+  ],
+  "tools": [
+    {
+      "icon": "☀️",
+      "name": "Nội dung mẫu",
+      "href": "/brief",
+      "what": "Nội dung mẫu",
+      "when": "Nội dung mẫu"
+    },
+    {
+      "icon": "✅",
+      "name": "Nội dung mẫu",
+      "href": "/sales/checklist",
+      "what": "Nội dung mẫu",
+      "when": "Nội dung mẫu"
+    }
+  ]
+}

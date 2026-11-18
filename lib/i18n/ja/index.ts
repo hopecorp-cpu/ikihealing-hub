@@ -1,0 +1,26 @@
+import { d as core } from "./core";
+import { d as b1 } from "./b1";
+import { d as b2 } from "./b2";
+import { d as b3 } from "./b3";
+import { d as b4 } from "./b4";
+import { d as b5 } from "./b5";
+import { d as b6 } from "./b6";
+import { d as b7 } from "./b7";
+import { d as b8 } from "./b8";
+import { d as b9 } from "./b9";
+import { d as b10 } from "./b10";
+import { d as b11 } from "./b11";
+import { d as b12 } from "./b12";
+import { d as b13 } from "./b13";
+import { d as b14 } from "./b14";
+import { d as b15 } from "./b15";
+import { d as b16 } from "./b16";
+import { d as b17 } from "./b17";
+import { d as b18 } from "./b18";
+import { d as b19 } from "./b19";
+import { d as b20 } from "./b20";
+import { d as b21 } from "./b21";
+
+export const JA_ALL: Record<string, string> = Object.assign(
+  {}, core, b1, b2, b3, b4, b5, b6, b7, b8, b9, b10, b11, b12, b13, b14, b15, b16, b17, b18, b19, b20, b21,
+);

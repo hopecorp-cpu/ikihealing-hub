@@ -1,0 +1,21 @@
+{
+  "_nguon": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "_chupLuc": "Nội dung mẫu",
+  "_cachLamMoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "routines": [
+    {
+      "id": "tro-ly-truc-viec",
+      "ten": "Nội dung mẫu",
+      "gio": "Nội dung mẫu",
+      "bat": true,
+      "chayCuoi": "2026-09-20T07:16+07:00"
+    },
+    {
+      "id": "Nội dung mẫu",
+      "ten": "Nội dung mẫu",
+      "gio": "Nội dung mẫu",
+      "bat": true,
+      "chayCuoi": "2026-09-20T08:29+07:00"
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "steps": [
+    {
+      "letter": "C",
+      "key": "clarify",
+      "title": "Nội dung mẫu",
+      "goal": "Nội dung mẫu",
+      "ask": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "zalo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "avoid": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "tip": "Nội dung mẫu"
+    },
+    {
+      "letter": "L",
+      "key": "label",
+      "title": "Nội dung mẫu",
+      "goal": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "ask": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "zalo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "avoid": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "tip": "Nội dung mẫu"
+    }
+  ]
+}

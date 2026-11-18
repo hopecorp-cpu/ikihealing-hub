@@ -1,0 +1,90 @@
+{
+  "_note": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "packages": [
+    {
+      "id": 0,
+      "name": "Nội dung mẫu",
+      "price": "249.000đ",
+      "gom": "Nội dung mẫu",
+      "role": "Nội dung mẫu"
+    },
+    {
+      "id": 1,
+      "name": "Nội dung mẫu",
+      "price": "790.000đ",
+      "gom": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "role": "Nội dung mẫu"
+    }
+  ],
+  "profiles": {
+    "KHIHU": {
+      "name": "Nội dung mẫu",
+      "dauHieu": "Nội dung mẫu",
+      "mealFocus": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "comboTrongGoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "tuVan30": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu"
+      ],
+      "appNova": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "upsell": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    "DAMTHAP": {
+      "name": "Nội dung mẫu",
+      "dauHieu": "Nội dung mẫu",
+      "mealFocus": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu",
+      "comboTrongGoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "tuVan30": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "appNova": "Nội dung mẫu",
+      "upsell": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    "CANUAT": {
+      "name": "Nội dung mẫu",
+      "dauHieu": "Nội dung mẫu",
+      "mealFocus": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "comboTrongGoi": "Nội dung mẫu",
+      "tuVan30": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "appNova": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "upsell": "Nội dung mẫu"
+    },
+    "HAN": {
+      "name": "Nội dung mẫu",
+      "dauHieu": "Nội dung mẫu",
+      "mealFocus": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "comboTrongGoi": "Nội dung mẫu",
+      "tuVan30": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "appNova": "Nội dung mẫu",
+      "upsell": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    "NHIET": {
+      "name": "Nội dung mẫu",
+      "dauHieu": "Nội dung mẫu",
+      "mealFocus": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "sanPham": "Nội dung mẫu",
+      "comboTrongGoi": "Nội dung mẫu",
+      "tuVan30": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "appNova": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "upsell": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  },
+  "guardrails": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ]
+}

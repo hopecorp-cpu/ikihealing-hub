@@ -1,0 +1,54 @@
+{
+  "source": "Nội dung mẫu",
+  "importanceWeight": {
+    "required": 3,
+    "important": 2,
+    "nice": 1
+  },
+  "groups": [
+    {
+      "key": "company",
+      "icon": "🏢",
+      "title": "Nội dung mẫu",
+      "titleVi": "Nội dung mẫu",
+      "items": [
+        {
+          "key": "pitch_deck",
+          "title": "Nội dung mẫu",
+          "importance": "required",
+          "desc": "Nội dung mẫu",
+          "templateFile": "Nội dung mẫu"
+        },
+        {
+          "key": "exec_summary",
+          "title": "Nội dung mẫu",
+          "importance": "important",
+          "desc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "templateFile": "Nội dung mẫu"
+        }
+      ]
+    },
+    {
+      "key": "team",
+      "icon": "👥",
+      "title": "Nội dung mẫu",
+      "titleVi": "Nội dung mẫu",
+      "items": [
+        {
+          "key": "founder_bios",
+          "title": "Nội dung mẫu",
+          "importance": "required",
+          "desc": "Nội dung mẫu",
+          "templateFile": "Nội dung mẫu"
+        },
+        {
+          "key": "org_chart",
+          "title": "Nội dung mẫu",
+          "importance": "important",
+          "desc": "Nội dung mẫu",
+          "templateFile": "Nội dung mẫu"
+        }
+      ]
+    }
+  ]
+}

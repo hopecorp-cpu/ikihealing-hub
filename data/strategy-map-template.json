@@ -1,0 +1,59 @@
+{
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "perspectives": [
+    {
+      "key": "financial",
+      "icon": "💰",
+      "title": "Nội dung mẫu",
+      "desc": "Nội dung mẫu",
+      "color": "#10B981",
+      "objectives": [
+        {
+          "key": "rev_pace",
+          "title": "Nội dung mẫu",
+          "metric": "rev_pace",
+          "unit": "%",
+          "target": 100,
+          "dir": "up",
+          "link": "/vong-lap-doanh-thu"
+        },
+        {
+          "key": "gross_margin",
+          "title": "Nội dung mẫu",
+          "metric": "gross_margin",
+          "unit": "%",
+          "target": 66,
+          "dir": "up",
+          "link": "/tai-chinh"
+        }
+      ]
+    },
+    {
+      "key": "customer",
+      "icon": "🤝",
+      "title": "Nội dung mẫu",
+      "desc": "Nội dung mẫu",
+      "color": "#3B82F6",
+      "objectives": [
+        {
+          "key": "chat",
+          "title": "Nội dung mẫu",
+          "metric": "chat_score",
+          "unit": "/10",
+          "target": 8,
+          "dir": "up",
+          "link": "/chat-quality"
+        },
+        {
+          "key": "close",
+          "title": "Nội dung mẫu",
+          "metric": "close_rate",
+          "unit": "%",
+          "target": 15,
+          "dir": "up",
+          "link": "/hieu-qua-cham-soc"
+        }
+      ]
+    }
+  ]
+}

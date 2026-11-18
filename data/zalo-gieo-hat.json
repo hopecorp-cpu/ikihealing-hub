@@ -1,0 +1,38 @@
+{
+  "_doc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "linkGoc": "Nội dung mẫu",
+  "tranNhomMoiNgay": 5,
+  "gioSom": 8,
+  "gioMuon": 21,
+  "nhomTrang": [
+    {
+      "ten": "Nội dung mẫu",
+      "nguoiGui": "Sơn",
+      "bat": true,
+      "noiBo": true,
+      "ghiChu": "Nội dung mẫu"
+    },
+    {
+      "ten": "Nội dung mẫu",
+      "nguoiGui": "Đào",
+      "bat": false,
+      "noiBo": false,
+      "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ],
+  "nhip": {
+    "1": {
+      "ten": "Nội dung mẫu",
+      "tin": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    "2": {
+      "ten": "Nội dung mẫu",
+      "tin": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    "3": {
+      "ten": "Nội dung mẫu",
+      "tin": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  }
+}

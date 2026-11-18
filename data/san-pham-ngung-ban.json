@@ -1,0 +1,27 @@
+{
+  "_ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "_capNhat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "sanPham": [
+    {
+      "ten": "Nội dung mẫu",
+      "trangThai": "Nội dung mẫu",
+      "tuKhoaAnh": [
+        "len-men",
+        "nuoc-uong"
+      ],
+      "duongDanAnh": [
+        "Nội dung mẫu"
+      ]
+    },
+    {
+      "ten": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "trangThai": "Nội dung mẫu",
+      "lyDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "tuKhoaAnh": [
+        "thanh-loc",
+        "tay-soi"
+      ],
+      "duongDanAnh": []
+    }
+  ]
+}

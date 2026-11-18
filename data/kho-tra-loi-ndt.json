@@ -1,0 +1,25 @@
+[
+  {
+    "id": "cty-ten-phap-ly",
+    "nhom": "cong_ty",
+    "cauHoi": "Nội dung mẫu",
+    "traLoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "nguon": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "ngayDuyet": "2026-10-10",
+    "trangThai": "da_chot",
+    "banCu": "Nội dung mẫu",
+    "traLoiEn": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  },
+  {
+    "id": "cty-ten-phap-ly-dataroom",
+    "nhom": "cong_ty",
+    "cauHoi": "Nội dung mẫu",
+    "traLoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "traLoiEn": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "nguon": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "ngayDuyet": "2026-10-10",
+    "trangThai": "da_chot",
+    "ghiChu": "Nội dung mẫu",
+    "banCu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  }
+]

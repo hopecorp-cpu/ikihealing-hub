@@ -1,0 +1,44 @@
+{
+  "version": "1.0",
+  "capNhat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "ten": "Nội dung mẫu",
+  "nguon": {
+    "goc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "trangThai": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "lyDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  },
+  "taiSanKeChuyen": [
+    {
+      "id": "khoi-nguon-hieu-thao",
+      "ten": "Nội dung mẫu",
+      "dungCho": [
+        "dataroom",
+        "telesales"
+      ],
+      "tomTat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "vaiTro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "cachKeAnToan": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "camKhiKe": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ]
+    },
+    {
+      "id": "y-nghia-ten-nova",
+      "ten": "Nội dung mẫu",
+      "dungCho": [
+        "fanpage",
+        "blog"
+      ],
+      "tomTat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "vaiTro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "cachKeAnToan": "Nội dung mẫu",
+      "camKhiKe": []
+    }
+  ],
+  "khungKeChuyen": {
+    "canhan": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "sanPham": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  }
+}

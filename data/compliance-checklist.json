@@ -1,0 +1,54 @@
+{
+  "statuses": [
+    {
+      "key": "available",
+      "label": "Nội dung mẫu",
+      "color": "#10B981"
+    },
+    {
+      "key": "need_update",
+      "label": "Nội dung mẫu",
+      "color": "#F59E0B"
+    }
+  ],
+  "pillars": [
+    {
+      "key": "internal",
+      "icon": "🏛️",
+      "title": "Nội dung mẫu",
+      "items": [
+        {
+          "key": "phap_nhan",
+          "title": "Nội dung mẫu",
+          "importance": "required",
+          "lawRef": "Nội dung mẫu"
+        },
+        {
+          "key": "dieu_le",
+          "title": "Nội dung mẫu",
+          "importance": "required",
+          "lawRef": "Nội dung mẫu"
+        }
+      ]
+    },
+    {
+      "key": "hr",
+      "icon": "👥",
+      "title": "Nội dung mẫu",
+      "items": [
+        {
+          "key": "ds_lao_dong",
+          "title": "Nội dung mẫu",
+          "importance": "required",
+          "lawRef": "Nội dung mẫu"
+        },
+        {
+          "key": "so_quan_ly_ld",
+          "title": "Nội dung mẫu",
+          "importance": "important",
+          "lawRef": "Nội dung mẫu"
+        }
+      ]
+    }
+  ]
+}

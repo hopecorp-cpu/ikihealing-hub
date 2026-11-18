@@ -1,0 +1,34 @@
+name: Góp ý tính năng
+description: Đề xuất tính năng mới hoặc cải thiện tính năng đang có
+labels: ["gop-y"]
+body:
+  - type: input
+    id: khoi
+    attributes:
+      label: Khối chức năng
+      description: Vd chấm công, bảng lương, chia lead, trợ lý AI, báo cáo
+    validations:
+      required: true
+  - type: textarea
+    id: van-de
+    attributes:
+      label: Bạn đang gặp vấn đề gì
+      description: Hiện bạn làm việc này thế nào, chỗ nào tốn thời gian hoặc dễ sai
+    validations:
+      required: true
+  - type: textarea
+    id: de-xuat
+    attributes:
+      label: Bạn muốn phần mềm làm gì
+    validations:
+      required: true
+  - type: textarea
+    id: loi-ich
+    attributes:
+      label: Làm xong thì đỡ được gì
+      description: Vd tiết kiệm bao nhiêu giờ mỗi tuần, bớt loại lỗi nào
+  - type: input
+    id: quy-mo
+    attributes:
+      label: Quy mô doanh nghiệp của bạn
+      description: Số nhân sự, ngành hàng (không bắt buộc)

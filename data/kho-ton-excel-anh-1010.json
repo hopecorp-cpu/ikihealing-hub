@@ -1,0 +1,53 @@
+{
+  "nguon": "excel-anh-1010",
+  "kho": "Nội dung mẫu",
+  "khongGhi": [
+    "gia_ban",
+    "gia_von"
+  ],
+  "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "ky": [
+    {
+      "asOf": "2026-09-05",
+      "tuNgay": "2026-01-01",
+      "denNgay": "2026-09-05",
+      "vaiTro": "doi-chieu",
+      "sheet": "Nội dung mẫu",
+      "items": [
+        {
+          "sku": "BDCTRTTLNKC2T4D1BT01",
+          "name": "Nội dung mẫu",
+          "unit": "Chiếc",
+          "qty": 0
+        },
+        {
+          "sku": "BGLD01",
+          "name": "Nội dung mẫu",
+          "unit": "Chiếc",
+          "qty": 0
+        }
+      ]
+    },
+    {
+      "asOf": "2026-09-26",
+      "tuNgay": "2026-09-06",
+      "denNgay": "2026-09-26",
+      "vaiTro": "hien-hanh",
+      "sheet": "Nội dung mẫu",
+      "items": [
+        {
+          "sku": "BDCTRTTLNKC2T4D1BT01",
+          "name": "Nội dung mẫu",
+          "unit": "Chiếc",
+          "qty": 0
+        },
+        {
+          "sku": "BGLD01",
+          "name": "Nội dung mẫu",
+          "unit": "Chiếc",
+          "qty": null
+        }
+      ]
+    }
+  ]
+}

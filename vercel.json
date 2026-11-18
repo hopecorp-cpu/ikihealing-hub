@@ -1,0 +1,359 @@
+{
+  "framework": "nextjs",
+  "regions": [
+    "sin1"
+  ],
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "installCommand": "npm install",
+  "crons": [
+    {
+      "path": "/api/cron/tom-tat-nhom",
+      "schedule": "0 10 * * *"
+    },
+    {
+      "path": "/api/cron/funnel-report",
+      "schedule": "0 1 * * 1"
+    },
+    {
+      "path": "/api/cron/seo-agent",
+      "schedule": "5 * * * *"
+    },
+    {
+      "path": "/api/cron/seo-web-report",
+      "schedule": "20 1 * * 1"
+    },
+    {
+      "path": "/api/cron/web-ngay",
+      "schedule": "15 2 * * *"
+    },
+    {
+      "path": "/api/cron/dang-cheo",
+      "schedule": "45 0 * * *"
+    },
+    {
+      "path": "/api/cron/generate-tasks",
+      "schedule": "0 23 * * *"
+    },
+    {
+      "path": "/api/cron/ads-spend",
+      "schedule": "0 1 * * *"
+    },
+    {
+      "path": "/api/cron/ads-autopilot",
+      "schedule": "30 1 * * *"
+    },
+    {
+      "path": "/api/cron/lead-reassign",
+      "schedule": "*/15 * * * *"
+    },
+    {
+      "path": "/api/cron/leads-sync",
+      "schedule": "*/30 * * * *"
+    },
+    {
+      "path": "/api/cron/telegram-daily",
+      "schedule": "15 15 * * *"
+    },
+    {
+      "path": "/api/cron/telegram-neworder",
+      "schedule": "*/15 * * * *"
+    },
+    {
+      "path": "/api/cron/telegram-finance",
+      "schedule": "45 2,6,10 * * *"
+    },
+    {
+      "path": "/api/cron/telegram-care",
+      "schedule": "45 1 * * *"
+    },
+    {
+      "path": "/api/zalo/oa-refresh",
+      "schedule": "0 */12 * * *"
+    },
+    {
+      "path": "/api/cron/brain-brief?mode=brief",
+      "schedule": "30 0 * * *"
+    },
+    {
+      "path": "/api/cron/brain-brief?mode=recap",
+      "schedule": "0 14 * * *"
+    },
+    {
+      "path": "/api/cron/brain-brief?mode=strategic",
+      "schedule": "0 1 * * 0"
+    },
+    {
+      "path": "/api/cron/watchdog",
+      "schedule": "0 * * * *"
+    },
+    {
+      "path": "/api/cron/fb-comments",
+      "schedule": "*/20 * * * *"
+    },
+    {
+      "path": "/api/cron/content-factory?mode=research",
+      "schedule": "10 1 * * *"
+    },
+    {
+      "path": "/api/cron/content-factory?n=1&khung=trua",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/cron/content-factory?n=1&khung=toi",
+      "schedule": "30 12 * * *"
+    },
+    {
+      "path": "/api/cron/mkt-digest",
+      "schedule": "45 0 * * *"
+    },
+    {
+      "path": "/api/cron/report-reconcile?mode=nudge",
+      "schedule": "30 10 * * *"
+    },
+    {
+      "path": "/api/cron/report-reconcile?mode=full",
+      "schedule": "25 15 * * *"
+    },
+    {
+      "path": "/api/cron/thu-contact",
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron/telegram-balance",
+      "schedule": "0 3 * * *"
+    },
+    {
+      "path": "/api/cron/lead-drip",
+      "schedule": "30 1 * * *"
+    },
+    {
+      "path": "/api/cron/quiz-lead-report",
+      "schedule": "35 1 * * *"
+    },
+    {
+      "path": "/api/cron/don-jt-canh-bao",
+      "schedule": "45 1,14 * * *"
+    },
+    {
+      "path": "/api/cron/sale-nudge",
+      "schedule": "0 2,7,10 * * *"
+    },
+    {
+      "path": "/api/cron/zalo-nhac",
+      "schedule": "30 2,7,12 * * *"
+    },
+    {
+      "path": "/api/cron/profit-playbook",
+      "schedule": "5 1 * * *"
+    },
+    {
+      "path": "/api/cron/profit-measure",
+      "schedule": "35 1 * * 2,5"
+    },
+    {
+      "path": "/api/cron/blog-nurture",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/covan-intel",
+      "schedule": "12 2 * * 1"
+    },
+    {
+      "path": "/api/cron/covan-eval",
+      "schedule": "0 14 * * 0"
+    },
+    {
+      "path": "/api/cron/eval-may",
+      "schedule": "30 14 * * 0"
+    },
+    {
+      "path": "/api/cron/repeat-cycle",
+      "schedule": "30 1 * * *"
+    },
+    {
+      "path": "/api/cron/research-viral",
+      "schedule": "0 2 * * 2,5"
+    },
+    {
+      "path": "/api/cron/ra-mat-xich",
+      "schedule": "15 1 * * 1"
+    },
+    {
+      "path": "/api/cron/case-study",
+      "schedule": "30 2 * * 2,5"
+    },
+    {
+      "path": "/api/cron/ad-scout-digest",
+      "schedule": "0 2 * * *"
+    },
+    {
+      "path": "/api/cron/consult-remind",
+      "schedule": "30 12 * * *"
+    },
+    {
+      "path": "/api/cron/quiz-recheck",
+      "schedule": "20 2 * * *"
+    },
+    {
+      "path": "/api/cron/telegram-reconcile",
+      "schedule": "20 1 * * *"
+    },
+    {
+      "path": "/api/cron/brand-audit",
+      "schedule": "0 2 * * 1"
+    },
+    {
+      "path": "/api/cron/payroll-nudge",
+      "schedule": "0 1 1,28,29,30,31 * *"
+    },
+    {
+      "path": "/api/cron/luong-thang",
+      "schedule": "10 2 1,2,3,4,5 * *"
+    },
+    {
+      "path": "/api/cron/day-plan",
+      "schedule": "15 0 * * *"
+    },
+    {
+      "path": "/api/cron/telegram-eod",
+      "schedule": "30 14 * * *"
+    },
+    {
+      "path": "/api/cron/fb-may-truc",
+      "schedule": "*/5 * * * *"
+    },
+    {
+      "path": "/api/cron/gieo-hat-report",
+      "schedule": "40 1 * * *"
+    },
+    {
+      "path": "/api/cron/ca-truc-ai?n=25&bao=1",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/cron/hoc-the-gioi?luot=0",
+      "schedule": "40 0 * * *"
+    },
+    {
+      "path": "/api/cron/hoc-the-gioi?luot=1",
+      "schedule": "40 6 * * *"
+    },
+    {
+      "path": "/api/cron/hoc-the-gioi?luot=2",
+      "schedule": "40 13 * * *"
+    },
+    {
+      "path": "/api/cron/nhip-tien-bo",
+      "schedule": "10 0 * * *"
+    },
+    {
+      "path": "/api/cron/tg-boc-don",
+      "schedule": "5,35 * * * *"
+    },
+    {
+      "path": "/api/cron/day-don-ctv",
+      "schedule": "15 * * * *"
+    },
+    {
+      "path": "/api/cron/soan-bai-doi-tac",
+      "schedule": "18 2 * * *"
+    },
+    {
+      "path": "/api/cron/day-bai-doi-tac",
+      "schedule": "25 * * * *"
+    },
+    {
+      "path": "/api/cron/zns-sau-mua",
+      "schedule": "25 1-14 * * *"
+    },
+    {
+      "schedule": "20 1 * * *",
+      "path": "/api/cron/ra-mat-do"
+    },
+    {
+      "schedule": "40 14 * * *",
+      "path": "/api/cron/kpi-tu-do"
+    },
+    {
+      "path": "/api/cron/chi-muc-quet",
+      "schedule": "40 20 * * *"
+    },
+    {
+      "path": "/api/cron/chi-muc-quet",
+      "schedule": "40 8 * * *"
+    },
+    {
+      "schedule": "15 2 1 * *",
+      "path": "/api/cron/bao-cao-thang"
+    },
+    {
+      "schedule": "42 14 28-31 * *",
+      "path": "/api/cron/chot-doanh-thu-thang"
+    },
+    {
+      "schedule": "22 2 * * 1",
+      "path": "/api/cron/dong-tien-tuan"
+    },
+    {
+      "schedule": "12 2 * * *",
+      "path": "/api/cron/nhac-duyet-nghi"
+    },
+    {
+      "schedule": "11 2 * * *",
+      "path": "/api/cron/thi-tran-nhac"
+    },
+    {
+      "schedule": "17 2 * * *",
+      "path": "/api/cron/nhac-tra-lai-vay"
+    },
+    {
+      "schedule": "14 2 * * *",
+      "path": "/api/cron/cham-diem-zalo"
+    },
+    {
+      "schedule": "40 1-15 * * *",
+      "path": "/api/cron/cham-cuoc-goi"
+    },
+    {
+      "schedule": "10 2 * * *",
+      "path": "/api/cron/bao-cao-cuoc-goi"
+    },
+    {
+      "schedule": "25 2 * * 1",
+      "path": "/api/cron/kich-ban-thang"
+    },
+    {
+      "schedule": "16 2 * * *",
+      "path": "/api/cron/chuoi-cham-soc"
+    },
+    {
+      "path": "/api/cron/tts-process",
+      "schedule": "*/3 * * * *"
+    },
+    {
+      "path": "/api/cron/zalo-nhom-tra-loi",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/cron/tts-poll",
+      "schedule": "7,22,37,52 * * * *"
+    },
+    {
+      "path": "/api/cron/tts-token-refresh",
+      "schedule": "11 */6 * * *"
+    },
+    {
+      "path": "/api/cron/tts-heartbeat",
+      "schedule": "19 * * * *"
+    },
+    {
+      "path": "/api/cron/tts-so-ngay",
+      "schedule": "14 2 * * *"
+    },
+    {
+      "path": "/api/cron/shopee-token-refresh",
+      "schedule": "23 * * * *"
+    }
+  ]
+}

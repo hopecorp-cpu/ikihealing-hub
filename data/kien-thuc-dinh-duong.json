@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "capNhat": "2026-08-01",
+  "ten": "Nội dung mẫu",
+  "nguon": {
+    "goc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "trangThai": "Nội dung mẫu",
+    "cauKiemChung": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  },
+  "luatDung": {
+    "tuCach": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "camTuyetDoi": [
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    ],
+    "duocPhep": [
+      "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "Nội dung mẫu"
+    ]
+  },
+  "chuDe": [
+    {
+      "id": "uong-nuoc-dung-cach",
+      "ten": "Nội dung mẫu",
+      "chuong": "3.4",
+      "dungCho": [
+        "blog",
+        "quiz"
+      ],
+      "doTinCay": "cao",
+      "canhBaoSoLieu": true,
+      "cotLoi": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "congThuc": {
+        "nguoiLon": {
+          "nuocTrang": "Nội dung mẫu",
+          "nuocTong": "Nội dung mẫu",
+          "viDu": "Nội dung mẫu"
+        },
+        "treEm": [
+          "Nội dung mẫu",
+          "Nội dung mẫu"
+        ]
+      },
+      "thoiDiemVang": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "goiYHook": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "raoPhapLy": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "id": "an-dung-du-thu-tu-an",
+      "ten": "Nội dung mẫu",
+      "chuong": "3.5",
+      "dungCho": [
+        "blog",
+        "quiz"
+      ],
+      "doTinCay": "cao",
+      "canhBaoSoLieu": false,
+      "cotLoi": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "viDuBuaSang": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "goiYHook": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ],
+      "raoPhapLy": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ],
+  "ungDungTrongHeThong": {
+    "blog": "Nội dung mẫu",
+    "quiz": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "telesales": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "hocVien": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "contentFactory": "Nội dung mẫu"
+  }
+}

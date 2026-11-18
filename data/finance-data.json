@@ -1,0 +1,120 @@
+{
+  "generatedAt": "2026-06-12",
+  "period": "Nội dung mẫu",
+  "pnl": [
+    {
+      "month": "2026-03",
+      "label": "Nội dung mẫu",
+      "revenue": 0,
+      "cogs": 0,
+      "salary": 0,
+      "insurance": 0,
+      "interest": 0,
+      "warehouse_rent": 0,
+      "other_cost": 0,
+      "total_cost": 0,
+      "profit": 0,
+      "net_margin": 0.09083381945351252,
+      "cogs_ratio": 0.27915851500372063,
+      "complete": true,
+      "note": ""
+    },
+    {
+      "month": "2026-04",
+      "label": "Nội dung mẫu",
+      "revenue": 0,
+      "cogs": 0,
+      "salary": 0,
+      "insurance": 0,
+      "interest": 0,
+      "warehouse_rent": 0,
+      "other_cost": 0,
+      "total_cost": 0,
+      "profit": 0,
+      "net_margin": -0.1460523126900819,
+      "cogs_ratio": 0.3938700658976772,
+      "complete": true,
+      "note": ""
+    }
+  ],
+  "expenses": {
+    "2026-03": [
+      {
+        "stt": 1,
+        "date": "2025-09-30",
+        "content": "Nội dung mẫu",
+        "amount": 0,
+        "recipient": "Nội dung mẫu"
+      },
+      {
+        "stt": 2,
+        "date": "2025-10-02",
+        "content": "Nội dung mẫu",
+        "amount": 0,
+        "recipient": "Nội dung mẫu"
+      }
+    ],
+    "2026-04": [
+      {
+        "stt": 1,
+        "date": "2026-03-31",
+        "content": "Nội dung mẫu",
+        "amount": 0,
+        "recipient": ""
+      },
+      {
+        "stt": 2,
+        "date": "2026-03-31",
+        "content": "Nội dung mẫu",
+        "amount": 0,
+        "recipient": ""
+      }
+    ],
+    "2026-05": [
+      {
+        "stt": 1,
+        "date": "2026-04-30",
+        "content": "Nội dung mẫu",
+        "amount": 0,
+        "recipient": ""
+      },
+      {
+        "stt": 2,
+        "date": "2026-04-30",
+        "content": "Nội dung mẫu",
+        "amount": 0,
+        "recipient": ""
+      }
+    ]
+  },
+  "productRevenue": {
+    "2026-03": [
+      {
+        "sku": "TV668",
+        "name": "Nội dung mẫu",
+        "qty": 481,
+        "revenue_vat": 0,
+        "revenue_pretax": 0,
+        "unit_cost": 0,
+        "cogs": 0,
+        "gross_profit": 0,
+        "gp_pct": 0.824432494697094
+      },
+      {
+        "sku": "CFNOVA",
+        "name": "Nội dung mẫu",
+        "qty": 97,
+        "revenue_vat": 0,
+        "revenue_pretax": 0,
+        "unit_cost": 0,
+        "cogs": 0,
+        "gross_profit": 0,
+        "gp_pct": 0.6253084
+      }
+    ]
+  },
+  "insights": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ]
+}

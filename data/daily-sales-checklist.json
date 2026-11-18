@@ -1,0 +1,68 @@
+{
+  "deadline": "17:30",
+  "tierWeight": {
+    "1": 5,
+    "2": 2,
+    "3": 1
+  },
+  "tierLabel": {
+    "1": "Nội dung mẫu",
+    "2": "Nội dung mẫu",
+    "3": "Nội dung mẫu"
+  },
+  "links": {
+    "group": "Nội dung mẫu",
+    "zalo": "Nội dung mẫu"
+  },
+  "inviteMessage": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "sections": [
+    {
+      "key": "core",
+      "title": "Nội dung mẫu",
+      "items": [
+        {
+          "key": "calls",
+          "label": "Nội dung mẫu",
+          "kind": "auto",
+          "auto": "calls",
+          "target": 8,
+          "tier": 1
+        },
+        {
+          "key": "closed",
+          "label": "Nội dung mẫu",
+          "kind": "auto",
+          "auto": "orders",
+          "target": 3,
+          "tier": 1
+        }
+      ]
+    },
+    {
+      "key": "page",
+      "title": "Nội dung mẫu",
+      "items": [
+        {
+          "key": "page_inbox",
+          "label": "Nội dung mẫu",
+          "kind": "number",
+          "target": 20,
+          "tier": 1,
+          "roles": [
+            "page"
+          ]
+        },
+        {
+          "key": "invite_comment",
+          "label": "Nội dung mẫu",
+          "kind": "check",
+          "target": 1,
+          "tier": 2,
+          "roles": [
+            "page"
+          ]
+        }
+      ]
+    }
+  ]
+}

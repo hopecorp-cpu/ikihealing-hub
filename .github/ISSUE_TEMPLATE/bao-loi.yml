@@ -1,0 +1,35 @@
+name: Báo lỗi
+description: Phần mềm chạy sai hoặc không chạy
+labels: ["loi"]
+body:
+  - type: input
+    id: trang
+    attributes:
+      label: Trang hoặc chức năng bị lỗi
+      description: Vd /bang-luong, cron watchdog
+    validations:
+      required: true
+  - type: textarea
+    id: buoc
+    attributes:
+      label: Các bước tái hiện
+      placeholder: |
+        1. Vào ...
+        2. Bấm ...
+        3. Thấy ...
+    validations:
+      required: true
+  - type: textarea
+    id: mong-doi
+    attributes:
+      label: Kết quả mong đợi và kết quả thực tế
+    validations:
+      required: true
+  - type: textarea
+    id: moi-truong
+    attributes:
+      label: Môi trường
+      description: Chạy cục bộ hay Vercel, trình duyệt, phiên bản Node
+  - type: markdown
+    attributes:
+      value: Đừng dán khoá API, mật khẩu hay dữ liệu khách hàng thật.

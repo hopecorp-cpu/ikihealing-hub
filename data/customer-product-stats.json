@@ -1,0 +1,43 @@
+{
+  "generatedAt": "2026-06-15",
+  "source": "Nội dung mẫu",
+  "systemTotalCustomers": 0,
+  "activeCustomersT1T4": 0,
+  "unique": {
+    "cafe": 235,
+    "silicon": 78,
+    "thanhLoc": 64
+  },
+  "anyOfThree": 283,
+  "anyOfThreeRatio": 25.4,
+  "naiveSum": 377,
+  "ratioVsActive": {
+    "cafe": 21.1,
+    "silicon": 7,
+    "thanhLoc": 5.7
+  },
+  "months": [
+    {
+      "month": "T1",
+      "orders": 340,
+      "customers": 273,
+      "cafeCust": 49,
+      "siliconCust": 22,
+      "thanhLocCust": 17,
+      "cafeKg": null,
+      "siliconUnits": null,
+      "thanhLocUnits": null
+    },
+    {
+      "month": "T2",
+      "orders": 429,
+      "customers": 392,
+      "cafeCust": 29,
+      "siliconCust": 12,
+      "thanhLocCust": 5,
+      "cafeKg": null,
+      "siliconUnits": null,
+      "thanhLocUnits": null
+    }
+  ]
+}

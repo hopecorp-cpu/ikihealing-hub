@@ -1,0 +1,76 @@
+{
+  "_ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "tieuDe": "Nội dung mẫu",
+  "phuDe": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "loiMo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "khongPhai": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu"
+  ],
+  "thoiQuen": [
+    {
+      "ten": "Nội dung mẫu",
+      "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "ten": "Nội dung mẫu",
+      "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ],
+  "cachDung": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "tuan": [
+    {
+      "ten": "Nội dung mẫu",
+      "mucTieu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "ngay": [
+        {
+          "so": 1,
+          "chuDe": "Nội dung mẫu",
+          "viec": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "sang": 1,
+          "trua": 11,
+          "toi": 17,
+          "nhac": "Nội dung mẫu"
+        },
+        {
+          "so": 2,
+          "chuDe": "Nội dung mẫu",
+          "viec": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "sang": 4,
+          "trua": 51,
+          "toi": 64,
+          "nhac": "Nội dung mẫu"
+        }
+      ]
+    },
+    {
+      "ten": "Nội dung mẫu",
+      "mucTieu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "ngay": [
+        {
+          "so": 8,
+          "chuDe": "Nội dung mẫu",
+          "viec": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "sang": 4,
+          "trua": 32,
+          "toi": 38,
+          "nhac": "Nội dung mẫu"
+        },
+        {
+          "so": 9,
+          "chuDe": "Nội dung mẫu",
+          "viec": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "sang": 1,
+          "trua": 26,
+          "toi": 69,
+          "nhac": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+        }
+      ]
+    }
+  ],
+  "sauDo": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ],
+  "bangTheoDoi": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+}

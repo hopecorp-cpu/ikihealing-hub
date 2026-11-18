@@ -1,0 +1,67 @@
+{
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "luatChung": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ],
+  "capDo": {
+    "may-dang": "Nội dung mẫu",
+    "may-soan-nguoi-dang": "Nội dung mẫu",
+    "tam-tat": "Nội dung mẫu"
+  },
+  "nenTang": [
+    {
+      "ma": "medium",
+      "ten": "Medium",
+      "url": "https://medium.com/",
+      "mucTuDong": "may-dang",
+      "nhipNgay": 1,
+      "hopChuDe": [
+        "tat-ca"
+      ],
+      "dinhDang": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "doDai": "Nội dung mẫu",
+      "backlink": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "camKyThuat": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu"
+      ],
+      "duocPhep": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "vaoSeo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "nguon": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "datLink": "canonical",
+      "ghiChuMayDang": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "gioSomNhat": 12
+    },
+    {
+      "ma": "substack",
+      "ten": "Nội dung mẫu",
+      "url": "Nội dung mẫu",
+      "mucTuDong": "may-dang",
+      "nhipNgay": 3,
+      "hopChuDe": [
+        "tat-ca"
+      ],
+      "dinhDang": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "doDai": "Nội dung mẫu",
+      "backlink": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "camKyThuat": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ],
+      "duocPhep": "Nội dung mẫu",
+      "vaoSeo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "nguon": "Nội dung mẫu",
+      "ghiChu": "Nội dung mẫu",
+      "datLink": "than-bai",
+      "gioSomNhat": 8
+    }
+  ],
+  "nhomChuDe": {
+    "bao-cao": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "kien-thuc": "Nội dung mẫu",
+    "lo-trinh": "Nội dung mẫu",
+    "cong-nghe": "Nội dung mẫu",
+    "tat-ca": "Nội dung mẫu"
+  }
+}

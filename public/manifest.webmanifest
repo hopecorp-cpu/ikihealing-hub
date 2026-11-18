@@ -1,0 +1,25 @@
+{
+  "name": "Ops Hub",
+  "short_name": "Ops Hub",
+  "description": "Hệ điều hành nội bộ: chấm công, lương, KPI, việc, khách, báo cáo",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B1F14",
+  "theme_color": "#0B1F14",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}

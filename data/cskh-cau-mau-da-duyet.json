@@ -1,0 +1,31 @@
+{
+  "ban": "Nội dung mẫu",
+  "nguon": "Nội dung mẫu",
+  "sha256Nguon": "Nội dung mẫu",
+  "sinhBoi": "Nội dung mẫu",
+  "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "cau": [
+    {
+      "ma": "CM01a",
+      "tinhHuong": "Nội dung mẫu",
+      "kenhGoc": "Nội dung mẫu",
+      "kenh": "cong-khai",
+      "dieuKien": "",
+      "cau": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "banDuyet": "Nội dung mẫu",
+      "congKhaiThay": "",
+      "khongTraLoi": false
+    },
+    {
+      "ma": "CM01b",
+      "tinhHuong": "Nội dung mẫu",
+      "kenhGoc": "Inbox",
+      "kenh": "inbox",
+      "dieuKien": "",
+      "cau": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "banDuyet": "Nội dung mẫu",
+      "congKhaiThay": "",
+      "khongTraLoi": false
+    }
+  ]
+}

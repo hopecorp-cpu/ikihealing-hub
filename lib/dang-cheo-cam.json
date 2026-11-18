@@ -1,0 +1,7 @@
+{
+  "ghiChu": "DANH SÁCH CẤM của máy đăng chéo (CEO 11/10/2026, sau vụ chuỗi tút 'Bữa sáng 10 phút' lên X @nhanvat_hn). Tài khoản của nhân vật ảo Nhân vật Mẫu KHÔNG đăng bài thương hiệu/blog NOVA. Cron soạn (lib/dang-cheo.ts) và máy đăng (scripts/dang-cheo-dang.mjs qua scripts/lib/cong-duyet-dang.mjs) đều đọc file này; gỡ một dòng là việc của CEO, không phải của máy. Adapter cũ vẫn giữ trong code, chỉ bị chặn ở đây.",
+  "nenTang": {
+    "x": "X @nhanvat_hn là tài khoản nhân vật ảo Nhân vật Mẫu — CEO 11/10/2026: không đăng bài thương hiệu/blog NOVA lên tài khoản Nhân vật Mẫu"
+  },
+  "taiKhoan": ["nhanvat_hn", "nhanvat.hn"]
+}

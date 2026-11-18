@@ -1,0 +1,17 @@
+{
+  "_docThis": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "tuKhoaNhaMinh": [
+    "Nội dung mẫu",
+    "example"
+  ],
+  "cauHoi": [
+    {
+      "cum": "dam",
+      "hoi": "Nội dung mẫu"
+    },
+    {
+      "cum": "dam",
+      "hoi": "Nội dung mẫu"
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "_ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "tieuDe": "Nội dung mẫu",
+  "phuDe": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "loiMo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "cachDung": {
+    "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "ghepBua": [
+      {
+        "bua": "Sáng",
+        "mon": "Nội dung mẫu",
+        "dam": 16
+      },
+      {
+        "bua": "Trưa",
+        "mon": "Nội dung mẫu",
+        "dam": 17
+      }
+    ],
+    "tong": "Nội dung mẫu",
+    "boTro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "luuY": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  },
+  "nhom": [
+    {
+      "ten": "Nội dung mẫu",
+      "moTa": "Nội dung mẫu",
+      "mon": [
+        {
+          "ten": "Nội dung mẫu",
+          "nguyenLieu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "cachLam": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+          "dam": 16
+        },
+        {
+          "ten": "Nội dung mẫu",
+          "nguyenLieu": "Nội dung mẫu",
+          "cachLam": "Nội dung mẫu",
+          "dam": 12
+        }
+      ]
+    },
+    {
+      "ten": "Nội dung mẫu",
+      "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "mon": [
+        {
+          "ten": "Nội dung mẫu",
+          "nguyenLieu": "Nội dung mẫu",
+          "cachLam": "Nội dung mẫu",
+          "dam": 18
+        },
+        {
+          "ten": "Nội dung mẫu",
+          "nguyenLieu": "Nội dung mẫu",
+          "cachLam": "Nội dung mẫu",
+          "dam": 16
+        }
+      ]
+    }
+  ],
+  "loiKet": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "boBa": {
+    "_nguon": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "sp": [
+      {
+        "anh": "sp-sanphama",
+        "ten": "Nội dung mẫu",
+        "loai": "Nội dung mẫu",
+        "vaiTro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "hopVoi": [
+          "Nội dung mẫu",
+          "Nội dung mẫu"
+        ],
+        "luuY": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "link": "Nội dung mẫu"
+      },
+      {
+        "anh": "sp-sanphamc",
+        "ten": "Nội dung mẫu",
+        "loai": "Nội dung mẫu",
+        "vaiTro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "hopVoi": [
+          "Nội dung mẫu",
+          "Nội dung mẫu"
+        ],
+        "luuY": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "link": "Nội dung mẫu"
+      }
+    ],
+    "batDau": {
+      "_ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "tieuDe": "Nội dung mẫu",
+      "doan": [
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ]
+    }
+  },
+  "ketNoi": [
+    {
+      "ten": "Nội dung mẫu",
+      "diaChi": "example.com/quiz",
+      "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "ten": "Nội dung mẫu",
+      "diaChi": "example.com/blog",
+      "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    }
+  ],
+  "chanTrang": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+}

@@ -1,0 +1,23 @@
+{
+  "intro": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "sections": [
+    {
+      "key": "muc_tieu",
+      "icon": "🎯",
+      "title": "Nội dung mẫu",
+      "prompts": [
+        "Nội dung mẫu",
+        "Nội dung mẫu"
+      ]
+    },
+    {
+      "key": "boi_canh",
+      "icon": "🔍",
+      "title": "Nội dung mẫu",
+      "prompts": [
+        "Nội dung mẫu",
+        "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+      ]
+    }
+  ]
+}

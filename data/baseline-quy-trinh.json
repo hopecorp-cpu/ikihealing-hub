@@ -1,0 +1,34 @@
+{
+  "ghiChu": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "capNhat": "2026-10-10",
+  "quyTrinh": [
+    {
+      "id": "luong-thang",
+      "ten": "Nội dung mẫu",
+      "nguoiGiu": "Nội dung mẫu",
+      "truoc": {
+        "gioMoiKy": null,
+        "loiGhiNhan": "Nội dung mẫu"
+      },
+      "sau": {
+        "moTa": "Nội dung mẫu",
+        "kiemThu": "Nội dung mẫu",
+        "gioMoiKy": null
+      }
+    },
+    {
+      "id": "doi-soat-doanh-thu",
+      "ten": "Nội dung mẫu",
+      "nguoiGiu": "Nội dung mẫu",
+      "truoc": {
+        "gioMoiKy": null,
+        "loiGhiNhan": "Nội dung mẫu"
+      },
+      "sau": {
+        "moTa": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "kiemThu": "Nội dung mẫu",
+        "gioMoiKy": null
+      }
+    }
+  ]
+}

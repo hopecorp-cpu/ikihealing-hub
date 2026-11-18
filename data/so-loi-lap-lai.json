@@ -1,0 +1,68 @@
+{
+  "_doc": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "_luat": [
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+    "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+  ],
+  "loi": [
+    {
+      "ma": "anh-chan-ngan",
+      "ngay": "2026-09-22",
+      "lanNhac": 2,
+      "viec": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "luat": "Nội dung mẫu",
+      "vaoDauCEO": "Nội dung mẫu",
+      "goc": "Nội dung mẫu",
+      "chot": {
+        "kieu": "code",
+        "oDau": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "baiKiem": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+        "file": "scripts/nhan-vat-may.mjs",
+        "dauVet": "_CEO-LOAI"
+      },
+      "hauQua": "Nội dung mẫu"
+    },
+    {
+      "ma": "mat-lech-nhan-vat",
+      "ngay": "2026-09-24",
+      "lanNhac": 1,
+      "viec": "Nội dung mẫu",
+      "luat": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "vaoDauCEO": "Nội dung mẫu",
+      "goc": "Nội dung mẫu",
+      "chot": {
+        "kieu": "code",
+        "oDau": "Nội dung mẫu",
+        "baiKiem": "Nội dung mẫu",
+        "file": "scripts/nhan-vat-may.mjs",
+        "dauVet": "daSoi"
+      },
+      "hauQua": "Nội dung mẫu"
+    }
+  ],
+  "_doc2": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+  "hocTuSo": [
+    {
+      "ma": "nhanvat-anh-lookbook-kem",
+      "kenh": "Nội dung mẫu",
+      "ngayDo": "2026-09-24",
+      "nguonDo": "Nội dung mẫu",
+      "soDo": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "ketLuan": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "apVaoDau": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "doLai": "2026-10-08",
+      "canhBao": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn."
+    },
+    {
+      "ma": "Nội dung mẫu",
+      "kenh": "Nội dung mẫu",
+      "ngayDo": "2026-09-24",
+      "nguonDo": "Nội dung mẫu",
+      "soDo": "Nội dung mẫu",
+      "ketLuan": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "apVaoDau": "Nội dung mẫu. Thay bằng nội dung của doanh nghiệp bạn.",
+      "doLai": "2026-10-08",
+      "canhBao": "Nội dung mẫu"
+    }
+  ]
+}

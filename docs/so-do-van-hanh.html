@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sơ đồ vận hành Ops Hub</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Lexend:wght@500;600;700&display=swap">
+<style>
+/* Bố cục: một cột đọc rộng ~1040px, các khối chức năng xếp lưới tự gãy; sơ đồ luồng chạy ngang, điện thoại thì dọc. */
+:root {
+  --bg: #F3F6F9;
+  --surface: #FFFFFF;
+  --ink: #142235;
+  --muted: #56657A;
+  --line: #D9E1EA;
+  --accent: #0E5E7A;
+  --accent-soft: #E1EFF4;
+  --amber: #B7791F;
+  --amber-soft: #FBF0DC;
+  --ok: #2F7D4F; --ok-soft: #E3F2E8;
+  --warn: #9A5B0B; --warn-soft: #FCEFD9;
+  --info: #3B5BA9; --info-soft: #E5EBF8;
+  --human: #6B3FA0; --human-soft: #EFE7F8;
+  --f-display: "Lexend", "Be Vietnam Pro", system-ui, sans-serif;
+  --f-body: "Be Vietnam Pro", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0D1724; --surface: #142131; --ink: #E6EDF5; --muted: #9AAABD; --line: #26374B;
+  --accent: #5FB8D6; --accent-soft: #15344A; --amber: #E3B25A; --amber-soft: #3A2C12;
+  --ok: #6FC48F; --ok-soft: #173525; --warn: #E8AE5C; --warn-soft: #3A2A10;
+  --info: #93AEEA; --info-soft: #1C2A4A; --human: #C3A2EC; --human-soft: #2C1F40;
+  color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --bg: #0D1724; --surface: #142131; --ink: #E6EDF5; --muted: #9AAABD; --line: #26374B;
+  --accent: #5FB8D6; --accent-soft: #15344A; --amber: #E3B25A; --amber-soft: #3A2C12;
+  --ok: #6FC48F; --ok-soft: #173525; --warn: #E8AE5C; --warn-soft: #3A2A10;
+  --info: #93AEEA; --info-soft: #1C2A4A; --human: #C3A2EC; --human-soft: #2C1F40;
+  color-scheme: dark; }
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--ink); font-family: var(--f-body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 40px 72px; }
+.wrap { max-width: 1040px; margin: 0 auto; display: flex; flex-direction: column; gap: 56px; }
+h1, h2, h3 { font-family: var(--f-display); text-wrap: balance; margin: 0; line-height: 1.25; }
+h1 { font-size: clamp(30px, 5vw, 44px); font-weight: 700; letter-spacing: -0.01em; }
+h2 { font-size: clamp(22px, 3vw, 28px); font-weight: 600; }
+h3 { font-size: 17px; font-weight: 600; }
+p { margin: 0; }
+.lead { font-size: 18px; color: var(--muted); max-width: 68ch; }
+.kicker { font-size: 13px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--accent); }
+section { display: flex; flex-direction: column; gap: 20px; }
+.sec-intro { color: var(--muted); max-width: 68ch; }
+
+/* Đầu trang */
+header { display: flex; flex-direction: column; gap: 16px; }
+.stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-top: 12px; }
+.stat { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px 16px; }
+.stat b { display: block; font-family: var(--f-display); font-size: 26px; font-weight: 600; color: var(--accent); font-variant-numeric: tabular-nums; }
+.stat span { font-size: 14px; color: var(--muted); }
+.stack { display: flex; flex-wrap: wrap; gap: 8px; }
+.tag { font-size: 13px; padding: 3px 9px; border-radius: 4px; background: var(--accent-soft); color: var(--accent); font-weight: 500; }
+
+/* Luồng kiến trúc */
+.flow { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; align-items: stretch; }
+.node { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 14px; display: flex; flex-direction: column; gap: 6px; min-width: 0; position: relative; }
+.node h3 { font-size: 15px; color: var(--accent); }
+.node ul { margin: 0; padding-left: 18px; font-size: 14px; color: var(--muted); }
+.flow .node + .node { margin-left: 22px; }
+.flow .node + .node::before { content: ""; position: absolute; left: -17px; top: 50%; width: 12px; height: 12px; border-top: 2px solid var(--amber); border-right: 2px solid var(--amber); transform: translateY(-50%) rotate(45deg); }
+.node.gate { border-color: var(--amber); background: var(--amber-soft); }
+.node.gate h3 { color: var(--amber); }
+@media (max-width: 820px) {
+  .flow { grid-template-columns: 1fr; }
+  .flow .node + .node { margin-left: 0; margin-top: 22px; }
+  .flow .node + .node::before { left: 50%; top: -17px; transform: translateX(-50%) rotate(135deg); }
+}
+
+/* Lưới chức năng */
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.mod { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px; display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.mod p.mi { font-size: 14px; color: var(--muted); }
+.mod ul { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
+.mod li { font-size: 14.5px; padding-top: 8px; border-top: 1px solid var(--line); }
+.mod li b { font-weight: 600; }
+
+/* Tầng AI */
+.tiers { display: flex; flex-direction: column; gap: 10px; }
+.tier { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 16px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 16px; }
+.tier-name { font-family: var(--f-display); font-weight: 600; }
+.tier-name small { display: block; font-family: var(--f-body); font-weight: 400; font-size: 13px; color: var(--muted); }
+.agents { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.agent { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 4px 12px; align-items: start; }
+.agent .nm { font-weight: 600; }
+.agent .ds { grid-column: 1 / -1; font-size: 14px; color: var(--muted); }
+.agent .ds em { font-style: normal; color: var(--ink); }
+.lvl { font-size: 12.5px; font-weight: 600; padding: 2px 8px; border-radius: 4px; white-space: nowrap; }
+.l-nguoi { background: var(--human-soft); color: var(--human); }
+.l-doc { background: var(--info-soft); color: var(--info); }
+.l-dx { background: var(--warn-soft); color: var(--warn); }
+.l-duyet { background: var(--amber-soft); color: var(--amber); }
+.l-han { background: var(--ok-soft); color: var(--ok); }
+.tier.hub { border-color: var(--accent); }
+@media (max-width: 640px) { .tier { grid-template-columns: 1fr; gap: 10px; } }
+.legend { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
+.legend div { display: flex; flex-direction: column; gap: 4px; font-size: 14px; color: var(--muted); }
+.legend .lvl { align-self: flex-start; }
+
+/* Lịch máy */
+.sched { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+.sched .mod h3 { color: var(--accent); }
+
+/* Bảng dữ liệu */
+.tbl-wrap { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); }
+table { border-collapse: collapse; width: 100%; min-width: 560px; font-size: 14.5px; }
+th, td { text-align: left; padding: 10px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { font-family: var(--f-display); font-weight: 600; font-size: 14px; background: var(--accent-soft); color: var(--accent); }
+tr:last-child td { border-bottom: 0; }
+td:first-child { font-weight: 600; white-space: nowrap; }
+
+/* Nguyên tắc */
+.rules { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 16px; }
+.rule { border-left: 3px solid var(--amber); padding: 4px 0 4px 16px; display: flex; flex-direction: column; gap: 6px; }
+.rule h3 { font-size: 16px; }
+.rule p { font-size: 14.5px; color: var(--muted); }
+
+.note { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; display: flex; flex-direction: column; gap: 10px; }
+.note ul { margin: 0; padding-left: 20px; color: var(--muted); font-size: 14.5px; display: flex; flex-direction: column; gap: 4px; }
+footer { font-size: 13px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+</style>
+</head><body>
+
+<div class="wrap">
+
+<header>
+  <span class="kicker">Hệ điều hành doanh nghiệp nhỏ</span>
+  <h1>Ops Hub</h1>
+  <p class="lead">Phần mềm điều hành nội bộ cho doanh nghiệp bán lẻ nhỏ. Một chỗ gom đơn hàng, khách, nhân sự, lương, nội dung, quảng cáo và một đội trợ lý AI chạy nền. Trang này mô tả chức năng và cách hệ thống được ghép lại, để ai đang dựng hệ tương tự có thể tham khảo. Không có số liệu, tên người, giá bán hay thông tin truy cập nào của công ty ở đây.</p>
+  <div class="stats">
+    <div class="stat"><b>130+</b><span>màn hình nghiệp vụ</span></div>
+    <div class="stat"><b>210+</b><span>module xử lý</span></div>
+    <div class="stat"><b>~70</b><span>tác vụ chạy nền theo lịch</span></div>
+    <div class="stat"><b>~100</b><span>bảng dữ liệu</span></div>
+    <div class="stat"><b>0đ</b><span>hạ tầng/tháng (gói miễn phí)</span></div>
+  </div>
+  <div class="stack">
+    <span class="tag">Next.js 14 + TypeScript</span><span class="tag">Tailwind</span><span class="tag">Supabase (Postgres, RLS, pgvector)</span>
+    <span class="tag">Vercel Cron</span><span class="tag">Bot Telegram</span><span class="tag">Zalo OA + Zalo cá nhân</span>
+    <span class="tag">Meta Graph API</span><span class="tag">Claude + Gemini</span><span class="tag">Web Push (PWA)</span>
+  </div>
+</header>
+
+<section>
+  <h2>Dữ liệu chảy qua hệ thống thế nào</h2>
+  <p class="sec-intro">Mọi thứ đi theo một chiều: nguồn bên ngoài đổ vào, máy chuẩn hoá về một kho, các trợ lý AI đọc kho để soạn việc, và chỉ những thứ đã qua cổng mới đi ra tới khách hoặc tới tiền.</p>
+  <div class="flow">
+    <div class="node"><h3>Nguồn</h3><ul><li>Nhóm chat ghi đơn</li><li>Hãng vận chuyển</li><li>Sao kê ngân hàng</li><li>Inbox Zalo, Facebook</li><li>Quảng cáo, form, quiz</li></ul></div>
+    <div class="node"><h3>Ống nạp</h3><ul><li>Webhook ghi tin thô</li><li>Máy cào mượn phiên đăng nhập</li><li>LLM bóc tin thành đơn</li><li>Nhập file Excel/CSV</li></ul></div>
+    <div class="node"><h3>Kho chung</h3><ul><li>Postgres có phân quyền theo dòng</li><li>Bảng cấu hình sửa không cần deploy</li><li>Kho tri thức dạng vector</li></ul></div>
+    <div class="node"><h3>Máy và trợ lý AI</h3><ul><li>Tính số, chia lead, nhắc việc</li><li>Soạn bài, soạn tin trả lời</li><li>Bản tin sáng chiều cho chủ</li></ul></div>
+    <div class="node gate"><h3>Cổng ra</h3><ul><li>Lọc từ cấm pháp lý</li><li>Người bấm duyệt</li><li>Trần tiền khoá cứng</li><li>Rồi mới tới khách, kênh, tiền</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Chức năng theo khối</h2>
+  <p class="sec-intro">Mỗi khối trả lời một câu hỏi của người dùng. Nhân viên thấy phần việc của mình; quản lý thấy thêm phần điều hành, tài chính và lương.</p>
+  <div class="grid">
+    <div class="mod"><h3>Việc hằng ngày</h3><p class="mi">Mở máy là biết hôm nay làm gì.</p><ul>
+      <li><b>Việc hôm nay</b>: việc được giao kèm hạn và cách đo "xong".</li>
+      <li><b>Bảng công việc</b>: cột trạng thái, kéo thả, bình luận.</li>
+      <li><b>Kế hoạch ngày</b>: máy rã mục tiêu tháng xuống việc từng ngày.</li>
+      <li><b>Chấm công GPS</b> và xin nghỉ có luồng duyệt.</li>
+    </ul></div>
+    <div class="mod"><h3>Bán hàng và khách</h3><p class="mi">Bán gì, cho ai, tiền về tới đâu.</p><ul>
+      <li><b>Kết cấu bán hàng</b>: combo và quà đã duyệt, nguồn duy nhất để báo giá.</li>
+      <li><b>Pool chia lead</b>: lead mới tự chia, quá hạn chưa gọi thì chia lại.</li>
+      <li><b>Khách 360 và RFM</b>: xếp khách theo giá trị và nhịp mua lại.</li>
+      <li><b>Tệp khách theo dòng sản phẩm</b> để bán chéo đúng nhu cầu.</li>
+      <li><b>Gán đơn cho sale</b> theo chữ ký trong tin, ảnh hưởng hoa hồng.</li>
+      <li><b>Hộp thư Zalo gộp</b> và danh sách khách đang chờ trả lời.</li>
+    </ul></div>
+    <div class="mod"><h3>Marketing và nội dung</h3><p class="mi">Máy soạn, người duyệt và đăng.</p><ul>
+      <li><b>Dispatch</b>: rã brief, giao cho từng trợ lý, chấm chất lượng.</li>
+      <li><b>Lịch chiến dịch</b> theo quý, tháng, ngày.</li>
+      <li><b>Tuyến bài theo phễu</b>: giữ cân đối đầu, giữa, cuối phễu.</li>
+      <li><b>Kho app AI</b>: chọn app theo việc thay vì tự viết câu lệnh.</li>
+      <li><b>Quảng cáo</b>: chi tiêu, giá mỗi lead, cảnh báo vượt trần.</li>
+      <li><b>Đăng chéo</b>: soạn bản cho nhiều nền tảng, người đăng tay.</li>
+    </ul></div>
+    <div class="mod"><h3>Điều hành và tài chính</h3><p class="mi">Đang thắng hay thua, mắt xích nào yếu.</p><ul>
+      <li><b>Trung tâm chỉ huy</b>: doanh thu, sale, sức khoẻ máy trên một màn.</li>
+      <li><b>Vòng lặp doanh thu</b>: từ mục tiêu tháng ra chỉ tiêu từng sale, số lead, trần ngân sách.</li>
+      <li><b>Bản đồ chiến lược</b> bốn khía cạnh và ba chân trời.</li>
+      <li><b>Tài chính, dòng tiền, bảng tài sản</b>; đối soát sàn và vận chuyển.</li>
+      <li><b>Dự báo</b> và báo cáo tháng tự sinh.</li>
+    </ul></div>
+    <div class="mod"><h3>Nhân sự và thu nhập</h3><p class="mi">Người, lương, thi đua.</p><ul>
+      <li><b>Lương của tôi</b>: đang ở bậc thưởng nào, còn bao nhiêu để lên bậc.</li>
+      <li><b>Chốt bảng lương</b>: bảo hiểm, thuế thu nhập cá nhân, xuất file kế toán.</li>
+      <li><b>KPI và check-in tuần</b> có phản hồi của quản lý.</li>
+      <li><b>Thi đua</b>: bảng xếp hạng đội.</li>
+      <li><b>Tuyển dụng</b>: tin tuyển, lọc CV bằng AI, onboarding theo bước.</li>
+    </ul></div>
+    <div class="mod"><h3>Kiến thức và quy trình</h3><p class="mi">Không nhớ thì tra, đừng đoán.</p><ul>
+      <li><b>Tài liệu và SOP</b> đúc kết từ việc đã làm.</li>
+      <li><b>Kho kiến thức có bài kiểm tra</b> cho nhân viên mới.</li>
+      <li><b>Tuân thủ</b>: rào pháp lý sản phẩm và quảng cáo.</li>
+      <li><b>Sổ lỗi lặp lại</b> để không vấp hai lần.</li>
+    </ul></div>
+    <div class="mod"><h3>Đối tác và nhà đầu tư</h3><p class="mi">Mở rộng ngoài bán lẻ.</p><ul>
+      <li><b>Đại lý</b>: hồ sơ, công nợ, tách khỏi doanh số bán lẻ.</li>
+      <li><b>Phòng dữ liệu nhà đầu tư</b>: khung hồ sơ thẩm định.</li>
+      <li><b>Hợp đồng và pháp chế</b>: sổ đăng ký văn bản.</li>
+    </ul></div>
+    <div class="mod"><h3>Quản trị hệ thống</h3><p class="mi">Biết máy nào đang sống.</p><ul>
+      <li><b>Máy chạy ngầm</b>: tuổi từng nguồn dữ liệu, nguồn nào chết báo đỏ.</li>
+      <li><b>Nhật ký AI</b>: mỗi lượt máy chạy ra sản phẩm gì.</li>
+      <li><b>Két bí mật</b> mã hoá khoá dịch vụ, có nhật ký truy cập.</li>
+      <li><b>Chi phí công cụ</b> theo tháng.</li>
+    </ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Đội trợ lý AI xếp theo tầng</h2>
+  <p class="sec-intro">Mô hình trục và nan hoa: một trợ lý điều phối ở giữa, các trợ lý thực thi xung quanh. Mỗi trợ lý được khai rõ <em style="font-style:normal;font-weight:600">mức tự chủ</em> và cái chốt thật đang chặn mức đó. Không khai được chốt thì không được khai mức.</p>
+  <div class="legend">
+    <div><span class="lvl l-nguoi">Người quyết</span>Tầng con người, máy không thay.</div>
+    <div><span class="lvl l-doc">Chỉ đọc</span>Tính và trình số, không hành động ra ngoài.</div>
+    <div><span class="lvl l-dx">Đề xuất</span>Máy soạn, người bấm mới đi.</div>
+    <div><span class="lvl l-duyet">Chờ duyệt</span>Máy làm ra sản phẩm, chủ duyệt mới phát hành.</div>
+    <div><span class="lvl l-han">Tự làm trong hạn</span>Tự chạy, nhưng trong trần đã khoá cứng.</div>
+  </div>
+  <div class="tiers">
+    <div class="tier"><div class="tier-name">Quyết định<small>Tầng 1</small></div><div class="agents">
+      <div class="agent"><span class="nm">Ban giám đốc</span><span class="lvl l-nguoi">Người quyết</span><span class="ds">Đặt mục tiêu, duyệt chiến lược, xem báo cáo.</span></div>
+    </div></div>
+    <div class="tier"><div class="tier-name">Chiến lược<small>Tầng 2</small></div><div class="agents">
+      <div class="agent"><span class="nm">Chiến lược</span><span class="lvl l-doc">Chỉ đọc</span><span class="ds">Bản đồ chiến lược, KPI, cảnh báo lệch nhịp.</span></div>
+      <div class="agent"><span class="nm">Nghiên cứu</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Thị trường, đối thủ, nỗi đau khách. <em>Chốt: chỉ ghi vào kho nội bộ, không ra khách.</em></span></div>
+    </div></div>
+    <div class="tier hub"><div class="tier-name">Điều phối<small>Tầng 3, trục giữa</small></div><div class="agents">
+      <div class="agent"><span class="nm">Dispatch</span><span class="lvl l-dx">Đề xuất</span><span class="ds">Rã brief, phân việc, chấm chất lượng, gom bài đạt. <em>Chốt: người chốt kế hoạch thì máy mới chạy.</em></span></div>
+    </div></div>
+    <div class="tier"><div class="tier-name">Thực thi<small>Tầng 4</small></div><div class="agents">
+      <div class="agent"><span class="nm">Kế hoạch doanh thu</span><span class="lvl l-doc">Chỉ đọc</span><span class="ds">KPI ngược từ mục tiêu, trần ngân sách quảng cáo.</span></div>
+      <div class="agent"><span class="nm">Nhà máy nội dung</span><span class="lvl l-duyet">Chờ duyệt</span><span class="ds">Viết bài nháp. <em>Chốt: bài đẩy vào chat chờ bấm Đăng hoặc Bỏ, qua cổng từ cấm.</em></span></div>
+      <div class="agent"><span class="nm">Máy viết blog</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Bài dài cho website, có lớp bù khi khung giờ bị lỡ. <em>Chốt: cổng từ cấm, bài không qua thì không đăng.</em></span></div>
+      <div class="agent"><span class="nm">Máy bóc đơn</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Đọc nhóm chat ghi đơn, bóc thành đơn có cấu trúc. <em>Chốt: chỉ ghi đơn, không đụng tiền, không gửi ai.</em></span></div>
+      <div class="agent"><span class="nm">Thiết kế</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Vẽ ảnh minh hoạ và dán logo. <em>Chốt: cấm cận mặt người, cấm chữ, cấm bao bì giả.</em></span></div>
+      <div class="agent"><span class="nm">Hiệu quả quảng cáo</span><span class="lvl l-dx">Đề xuất</span><span class="ds">Đo và đề xuất tăng, giảm, ngừng ngân sách. <em>Chốt: chế độ tự lái mặc định tắt, trần ngân sách/ngày kẹp ở một hàm duy nhất, nút tiền chỉ ở chat riêng của chủ.</em></span></div>
+      <div class="agent"><span class="nm">Ca trực AI</span><span class="lvl l-dx">Đề xuất</span><span class="ds">Soạn sẵn câu trả lời cho khách đang chờ. <em>Chốt: người bấm gửi.</em></span></div>
+      <div class="agent"><span class="nm">Nhắc khách chờ</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Chỉ nhắc thứ đo được: khách nói câu cuối mà chưa ai đáp. <em>Chốt: chỉ nhắc nội bộ.</em></span></div>
+    </div></div>
+    <div class="tier"><div class="tier-name">Đánh giá<small>Tầng 5</small></div><div class="agents">
+      <div class="agent"><span class="nm">Giám đốc AI</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Bản tin sáng, chiều, tuần; lọc nguồn rác trước khi trình.</span></div>
+      <div class="agent"><span class="nm">Máy học thế giới</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Chuyện có nguồn, rút nguyên lý, soi lại doanh nghiệp bằng số thật. Không tìm được chuyện đáng kể thì im.</span></div>
+    </div></div>
+    <div class="tier"><div class="tier-name">Tự động hoá<small>Tầng 6</small></div><div class="agents">
+      <div class="agent"><span class="nm">Watchdog</span><span class="lvl l-han">Tự làm trong hạn</span><span class="ds">Hai giờ một lần đo tuổi từng nguồn dữ liệu; nguồn chết thì mở đúng một việc cho người giữ nguồn đó.</span></div>
+    </div></div>
+    <div class="tier"><div class="tier-name">Kho tri thức<small>Tầng 7</small></div><div class="agents">
+      <div class="agent"><span class="nm">Brand Bible và SOP</span><span class="lvl l-doc">Chỉ đọc</span><span class="ds">Giọng thương hiệu, luật sản phẩm, quy trình lõi. Kho nền cho mọi trợ lý.</span></div>
+      <div class="agent"><span class="nm">Bộ nhớ chiến dịch</span><span class="lvl l-doc">Chỉ đọc</span><span class="ds">Nhớ bài thắng và bài trượt, nạp ngược vào brief lần sau.</span></div>
+      <div class="agent"><span class="nm">Kho cố vấn</span><span class="lvl l-doc">Chỉ đọc</span><span class="ds">Nhiều kho kiến thức quản trị, bán hàng, tài chính; nạp chọn lọc qua tìm kiếm vector, câu khó dùng model lớn, câu thường dùng model rẻ.</span></div>
+    </div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Lịch máy chạy nền</h2>
+  <p class="sec-intro">Khoảng 70 tác vụ hẹn giờ. Việc lặp một lần mỗi ngày đặt vào giờ làm việc buổi sáng, vì máy tắt ban đêm thì việc không chạy; nhiều việc cùng khung thì rải lệch phút.</p>
+  <div class="sched">
+    <div class="mod"><h3>Vài phút một lần</h3><ul>
+      <li>Chia lại lead quá hạn chưa liên hệ</li><li>Báo đơn mới vào nhóm</li><li>Đọc bình luận Facebook, trả lời nhóm Zalo</li><li>Đồng bộ đơn sàn thương mại điện tử</li></ul></div>
+    <div class="mod"><h3>Mỗi giờ</h3><ul>
+      <li>Bóc đơn từ nhóm chat (hai lượt/giờ)</li><li>Nhắc sale trong giờ làm</li><li>Đẩy đơn cộng tác viên</li></ul></div>
+    <div class="mod"><h3>Hằng ngày</h3><ul>
+      <li>Bản tin sáng, tổng kết chiều</li><li>Kế hoạch ngày và việc định kỳ</li><li>Chi tiêu quảng cáo, đề xuất ngân sách</li><li>Đối soát vận chuyển, ngân hàng, báo cáo sale</li><li>Viết blog, nghiên cứu nội dung, chuỗi chăm sóc khách</li><li>Chấm điểm hội thoại Zalo</li></ul></div>
+    <div class="mod"><h3>Hằng tuần, hằng tháng</h3><ul>
+      <li>Báo cáo phễu, SEO, rà thương hiệu</li><li>Bản tin chiến lược tuần</li><li>Chấm lại chất lượng câu trả lời cố vấn</li><li>Nhắc và tính lương đầu tháng</li><li>Báo cáo tháng</li></ul></div>
+  </div>
+</section>
+
+<section>
+  <h2>Mô hình dữ liệu</h2>
+  <p class="sec-intro">Khoảng 100 bảng, nhóm theo miền. Mọi bảng có phân quyền theo dòng: nhân viên chỉ đọc được dữ liệu của mình, bảng lương và tài chính chỉ quản lý thấy.</p>
+  <div class="tbl-wrap"><table>
+    <thead><tr><th>Miền</th><th>Thực thể chính</th></tr></thead>
+    <tbody>
+      <tr><td>Con người</td><td>Người dùng, phòng ban, hợp đồng lao động, lịch sử lương, ca làm bán thời gian</td></tr>
+      <tr><td>Chấm công, nghỉ</td><td>Chấm công, yêu cầu sửa công, đơn nghỉ, quỹ phép</td></tr>
+      <tr><td>Hiệu suất</td><td>Chu kỳ KPI, KPI, check-in tuần, 1-1, phản hồi, luật thưởng, lượt tính thưởng</td></tr>
+      <tr><td>Lương</td><td>Bảng lương, chỉnh sửa lương, cấu hình phạt</td></tr>
+      <tr><td>Khách, lead</td><td>Lead, khách, nhật ký chăm sóc, sự kiện chạm khách, lịch tư vấn, từ chối liên hệ, đồng ý dữ liệu</td></tr>
+      <tr><td>Đơn, doanh thu</td><td>Tin chat thô, đơn bóc từ chat, đơn và dòng hàng, vận đơn, quy kết doanh thu theo kênh</td></tr>
+      <tr><td>Tài chính</td><td>Sao kê và giao dịch ngân hàng, chi phí, khoản vay, công nợ đại lý</td></tr>
+      <tr><td>Nội dung</td><td>Bài nội dung, bài đã đăng nhóm, sổ việc của máy</td></tr>
+      <tr><td>Kênh chat</td><td>Tài khoản, liên hệ, tin nhắn Zalo; ảnh chụp nhóm</td></tr>
+      <tr><td>Đào tạo</td><td>Bài kiến thức, bài kiểm tra, lượt làm bài, nhật ký đọc, khoá học, học viên, onboarding</td></tr>
+      <tr><td>Tuyển dụng</td><td>Tin tuyển, ứng viên, lượt lọc CV</td></tr>
+      <tr><td>Hệ thống</td><td>Cấu hình khoá-giá trị, thông báo, nhật ký kiểm toán, két bí mật, kho tri thức vector</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Mười nguyên tắc rút ra khi vận hành</h2>
+  <p class="sec-intro">Phần đáng tham khảo nhất. Mỗi điều đều đến từ một lần hệ thống làm sai thật.</p>
+  <div class="rules">
+    <div class="rule"><h3>Cào ra rỗng thì dừng, không ghi</h3><p>Phiên đăng nhập hết hạn làm máy cào ra số 0 rồi ghi đè lên số thật. Kết quả rỗng phải thoát lỗi, giữ số cũ và báo đỏ.</p></div>
+    <div class="rule"><h3>Một cửa cho doanh thu</h3><p>Hàng chục màn hình tự truy vấn doanh thu mỗi chỗ một kiểu thì khi đổi nguồn không có chỗ nào để sửa một lần. Mọi nơi cần doanh thu đi qua một module.</p></div>
+    <div class="rule"><h3>Nguồn chính phải được phép kêu</h3><p>Đánh dấu một nguồn là "chỉ tham khảo" thì nó chết mà không ai biết. Nguồn nào đang là nguồn chính phải nằm trong danh sách báo động.</p></div>
+    <div class="rule"><h3>Đo sản lượng, không chỉ đo nhịp tim</h3><p>Một máy có thể chạy đều suốt tuần mà không đẻ ra sản phẩm nào. Ghi mỗi lượt chạy ra bao nhiêu sản phẩm, bao nhiêu lỗi.</p></div>
+    <div class="rule"><h3>Máy soạn, người bấm</h3><p>Mọi chữ đi tới khách và mọi thay đổi tiền đều có một người bấm cuối. Tự động hoàn toàn chỉ dành cho việc nội bộ.</p></div>
+    <div class="rule"><h3>Trần tiền đặt ở một chỗ</h3><p>Giới hạn ngân sách kẹp trong đúng một hàm mà cả thao tác tay lẫn tự động đều đi qua. Vá trần ở từng chỗ gọi lẻ thì sẽ sót.</p></div>
+    <div class="rule"><h3>Cổng từ cấm trước khi ra ngoài</h3><p>Sản phẩm có rào pháp lý về cách nói công dụng. Mọi chữ ra khách qua một bộ lọc từ cấm chung, không để từng trợ lý tự nhớ luật.</p></div>
+    <div class="rule"><h3>Đối chiếu dấu vết thật trước khi nhắc</h3><p>Cờ "đã liên hệ" do người bấm tay luôn thiếu và trễ. Trừ bớt bằng dấu vết máy ghi (tin nhắn, đơn, vận đơn) rồi mới nhắc, và cho người bị nhắc thấy phần đã trừ.</p></div>
+    <div class="rule"><h3>Cẩn thận giới hạn ngầm của API</h3><p>Lớp REST của Postgres trả tối đa 1000 dòng mỗi lần mà không báo lỗi. Bảng lớn phải lật trang, nếu không sẽ đếm thiếu âm thầm.</p></div>
+    <div class="rule"><h3>Cấu hình nằm trong bảng, không trong code</h3><p>Định tuyến báo cáo, bảng gán máy cho người, ngưỡng cảnh báo để trong bảng cấu hình có mốc ngày hiệu lực. Đổi người, đổi nhóm không cần deploy.</p></div>
+  </div>
+</section>
+
+<section>
+  <div class="note">
+    <h3>Bản này đã bỏ những gì</h3>
+    <ul>
+      <li>Mọi số liệu kinh doanh: doanh thu, số đơn, số khách, chi phí, giá bán, giá vốn.</li>
+      <li>Tên nhân sự, khách hàng, số điện thoại, mã nhóm chat, tài khoản ngân hàng.</li>
+      <li>Đường dẫn API, khoá dịch vụ, cấu trúc cột chi tiết.</li>
+      <li>Cơ chế lương thưởng cụ thể và nội dung kho kiến thức nội bộ.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>Tài liệu tham khảo kiến trúc. Số đếm màn hình, module, tác vụ và bảng là con số làm tròn tại thời điểm viết, tháng 11/2026.</footer>
+
+</div>
+</body></html>
