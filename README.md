@@ -6,6 +6,8 @@ Phần mềm được tách ra từ hệ thống một công ty đang vận hàn
 
 Trang giới thiệu bằng hình ảnh: https://hopecorp-cpu.github.io/ikihealing-hub/
 
+Sơ đồ đội AI agent theo từng phòng: https://hopecorp-cpu.github.io/ikihealing-hub/so-do-ai-agent.html
+
 English: [README.en.md](README.en.md)
 
 - Sơ đồ vận hành: [docs/SO-DO-VAN-HANH.md](docs/SO-DO-VAN-HANH.md)
