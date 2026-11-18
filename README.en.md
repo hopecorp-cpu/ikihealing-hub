@@ -1,6 +1,6 @@
 # IKIHEALING Hub
 
-An internal operating system for small retail businesses (roughly 5 to 50 people). One place for attendance, payroll, KPIs, tasks, customers, orders, content, ads, reports, and a team of background AI assistants.
+An internal operating system for sales-driven businesses, from a team of a few people to companies with a thousand staff or more. One place for attendance, payroll, KPIs, tasks, customers, orders, content, ads, reports, and a team of background AI assistants.
 
 It was extracted from a system that a Vietnamese company runs in production. All data, people, prices and private configuration have been replaced with samples. The sample company is **ACME Corp**, the retail brand is **NOVA**, and the products are **Sản phẩm A, B, C** (Product A, B, C). The user interface is in Vietnamese, with partial English and Japanese translations (switch at the top of the screen).
 
