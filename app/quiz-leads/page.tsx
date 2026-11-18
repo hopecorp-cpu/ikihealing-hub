@@ -13,7 +13,7 @@ import QuizLeadsClient from "./QuizLeadsClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Khách từ Quiz | ACME Ops Hub") };
+  return { title: t("Khách từ Quiz | IKIHEALING Hub") };
 }
 
 const PATTERN_VI: Record<string, string> = {

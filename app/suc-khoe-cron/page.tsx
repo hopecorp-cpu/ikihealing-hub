@@ -8,7 +8,7 @@ import { Activity, AlertTriangle, CheckCircle2, Clock, Radar, ServerCog, Trendin
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Sức Khỏe Cron | ACME Ops Hub") };
+  return { title: t("Sức Khỏe Cron | IKIHEALING Hub") };
 }
 
 export default async function SucKhoeCronPage() {

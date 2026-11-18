@@ -10,7 +10,7 @@ import { layDoanhThu } from "@/lib/doanh-thu";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Gán đơn cho sale | ACME Ops Hub") };
+  return { title: t("Gán đơn cho sale | IKIHEALING Hub") };
 }
 
 export default async function GanDonPage({ searchParams }: { searchParams: { m?: string } }) {

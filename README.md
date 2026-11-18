@@ -1,4 +1,4 @@
-# Ops Hub
+# IKIHEALING Hub
 
 Hệ điều hành nội bộ cho doanh nghiệp nhỏ bán lẻ ở Việt Nam (khoảng 5 đến 50 người). Một chỗ gom chấm công, lương, KPI, việc, khách, đơn hàng, nội dung, quảng cáo, báo cáo và một đội trợ lý AI chạy nền.
 
@@ -35,8 +35,8 @@ Chạy được trên gói miễn phí của Vercel và Supabase (gói miễn ph
 Cần: Node.js 20, Docker, [Supabase CLI](https://supabase.com/docs/guides/cli).
 
 ```bash
-git clone <repo-url> ops-hub
-cd ops-hub
+git clone https://github.com/hopecorp-cpu/ikihealing-hub.git
+cd ikihealing-hub
 npm install
 supabase init            # bỏ qua nếu đã có supabase/config.toml
 supabase start           # dựng Postgres + Auth cục bộ, in ra URL và các khoá

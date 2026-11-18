@@ -9,7 +9,7 @@ import VideoQueueClient from "./VideoQueueClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Lịch đăng video | ACME Ops Hub") };
+  return { title: t("Lịch đăng video | IKIHEALING Hub") };
 }
 
 export default async function Page() {

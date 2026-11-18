@@ -33,7 +33,7 @@ const HELP_TEXT =
   "- /dubao: dòng tiền 13 tuần\n- /dexuat: đề xuất chờ duyệt\n" +
   "- /duyet <số>: duyệt đề xuất (em chốt baseline, 7 ngày sau đo)\n" +
   "- /doluong: đo đề xuất đến hạn -> thắng/thua\n" +
-  "- /giaoviec <mô tả>: em soạn brief -> /ok để giao vào ops-hub\n" +
+  "- /giaoviec <mô tả>: em soạn brief -> /ok để giao vào ikihealing-hub\n" +
   "- /vieccho: việc đã giao + ai chưa nhận/chưa xong\n" +
   "- /chiendich <mục tiêu>: em rã kế hoạch (AI làm + giao người) -> /ok để chạy\n" +
   "- /chiendichngay <mục tiêu>: như trên nhưng em cứ thế làm luôn, không chờ duyệt\n" +
@@ -170,7 +170,7 @@ async function handle(
     await savePendingBrief(null);
     return (
       `ĐÃ GIAO: ${d.title}\nCho: ${d.assignee} | Hạn: ${d.due_date}\n` +
-      "Việc nằm trong /tasks của ops-hub, theo dõi bằng /vieccho."
+      "Việc nằm trong /tasks của ikihealing-hub, theo dõi bằng /vieccho."
     );
   }
 

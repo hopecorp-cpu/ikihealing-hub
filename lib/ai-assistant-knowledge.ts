@@ -327,13 +327,13 @@ Mỗi sáng đọc to 10 câu khẳng định để **rèn Empire Mindset**:
     answer: `Để dùng như native app:
 
 **iPhone (Safari):**
-1. Mở https://ops-hub.example.com
+1. Mở https://ikihealing-hub.example.com
 2. Bấm nút **Share** (mũi tên lên)
 3. Chọn **"Add to Home Screen"**
 4. Đặt tên "ACME" → Add
 
 **Android (Chrome):**
-1. Mở https://ops-hub.example.com
+1. Mở https://ikihealing-hub.example.com
 2. Bấm 3 chấm ⋮ → **"Cài đặt ứng dụng"**
 3. Confirm → biểu tượng ACME xuất hiện
 

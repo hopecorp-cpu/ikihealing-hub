@@ -591,7 +591,7 @@ export async function POST(req: Request) {
 
     const mCu = text.match(/^\/start\s+([0-9a-f-]{36})\b/i);
     if (mCu) {
-      await sendTelegram("Link nay da cu. Ban vao lai trang Phan loai khach (khach-360) tren Ops Hub, bam 'Bat nhac qua Telegram' de lay link moi nhe.", String(msg.chat.id));
+      await sendTelegram("Link nay da cu. Ban vao lai trang Phan loai khach (khach-360) tren IKIHEALING Hub, bam 'Bat nhac qua Telegram' de lay link moi nhe.", String(msg.chat.id));
       return NextResponse.json({ ok: true, linked: false, ly_do: "link_cu" });
     }
     const mMa = text.match(/^\/start\s+(\S+)/);

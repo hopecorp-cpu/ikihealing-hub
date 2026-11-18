@@ -75,7 +75,7 @@ export const SKILL_DECLS = [
       type: "object",
       properties: {
         viec: { type: "string", description: "Mô tả việc cần build/sửa, càng rõ càng tốt" },
-        du_an: { type: "string", description: "Dự án/repo áp dụng nếu biết (vd 'ops-hub', 'NOVA', 'sale page'). Ghi 'tieu-my' khi CEO nói 'giao Trợ lý Mac' hoặc việc là VIỆC TRÊN MÁY MAC không sửa code (đọc/tóm tắt tài liệu, tra vault Obsidian, chạy script có sẵn, cào bằng trình duyệt) — Trợ lý Mac là trợ lý chạy trên máy anh." },
+        du_an: { type: "string", description: "Dự án/repo áp dụng nếu biết (vd 'ikihealing-hub', 'NOVA', 'sale page'). Ghi 'tieu-my' khi CEO nói 'giao Trợ lý Mac' hoặc việc là VIỆC TRÊN MÁY MAC không sửa code (đọc/tóm tắt tài liệu, tra vault Obsidian, chạy script có sẵn, cào bằng trình duyệt) — Trợ lý Mac là trợ lý chạy trên máy anh." },
       },
       required: ["viec"],
     },

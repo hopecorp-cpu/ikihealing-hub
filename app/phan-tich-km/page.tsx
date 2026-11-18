@@ -10,7 +10,7 @@ import { Tag, AlertTriangle, Gift } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Phân tích khuyến mãi | ACME Ops Hub") };
+  return { title: t("Phân tích khuyến mãi | IKIHEALING Hub") };
 }
 
 export default async function Page() {

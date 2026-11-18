@@ -1,4 +1,4 @@
-# Ops Hub
+# IKIHEALING Hub
 
 An internal operating system for small retail businesses (roughly 5 to 50 people). One place for attendance, payroll, KPIs, tasks, customers, orders, content, ads, reports, and a team of background AI assistants.
 
@@ -30,8 +30,8 @@ Next.js 14 (App Router), TypeScript, Tailwind, Supabase (Postgres, row level sec
 You need Node.js 20, Docker and the [Supabase CLI](https://supabase.com/docs/guides/cli).
 
 ```bash
-git clone <repo-url> ops-hub
-cd ops-hub
+git clone https://github.com/hopecorp-cpu/ikihealing-hub.git
+cd ikihealing-hub
 npm install
 supabase init            # skip if supabase/config.toml already exists
 supabase start           # starts local Postgres and Auth, prints URL and keys

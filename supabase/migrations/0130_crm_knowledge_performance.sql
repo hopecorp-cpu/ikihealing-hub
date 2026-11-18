@@ -207,7 +207,7 @@ INSERT INTO kb_categories (slug, name, description, icon, color, sort_order) VAL
   ('sales',         '💼 Sales',            'Quy trình bán hàng, scripts, đối tượng KH', '💰', '#3B82F6', 3),
   ('marketing',     '📢 Marketing',        'Brand voice, content rules, kênh phân phối', '🎨', '#EC4899', 4),
   ('process',       '⚙️ Quy trình',        'Chấm công, xin nghỉ, ứng lương, báo cáo', '📋', '#8B5CF6', 5),
-  ('tools',         '🛠️ Công cụ',          'Pancake, Misa, Acme Ops Hub, Zalo OA', '🔧', '#06B6D4', 6),
+  ('tools',         '🛠️ Công cụ',          'Pancake, Misa, Acme IKIHEALING Hub, Zalo OA', '🔧', '#06B6D4', 6),
   ('customer',      '👤 Khách hàng',       'Persona, pain points, customer journey', '❤️', '#EF4444', 7),
   ('legal',         '⚖️ Pháp lý',          'BHXH, thuế TNCN, NQ 110/2025, luật lao động', '📜', '#6B7280', 8)
 ON CONFLICT (slug) DO NOTHING;
@@ -292,7 +292,7 @@ Bạn vào ACME không phải để "đi làm" — bạn vào ACME để **xây 
 - **Tổng:** 8h/ngày · 26 ngày/tháng · grace 5 phút
 
 ## Chấm công Face ID
-1. Vào `ops-hub.example.com/cham-cong` trên điện thoại
+1. Vào `ikihealing-hub.example.com/cham-cong` trên điện thoại
 2. Bấm **SCAN FACE — CHECK-IN** khi đến VP (yêu cầu GPS 150m)
 3. Cuối ngày bấm **SCAN FACE — CHECK-OUT** trước khi về
 4. Nếu làm **remote**, admin set work_mode = remote → không cần GPS

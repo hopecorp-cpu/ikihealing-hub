@@ -8,7 +8,7 @@ export const d: Record<string, string> = {
   "chinh": "main",
   "Lead": "Lead",
   "VIP (≥5tr)": "VIP (≥5tr)",
-  "Profit Playbook | ACME Ops Hub": "Profit Playbook | ACME Ops Hub",
+  "Profit Playbook | IKIHEALING Hub": "Profit Playbook | IKIHEALING Hub",
   "THUA": "LOSS",
   "Marketing": "Marketing",
   "Chung": "General",

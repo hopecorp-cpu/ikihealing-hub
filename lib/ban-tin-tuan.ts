@@ -54,7 +54,7 @@ const meta = (html: string, ten: string) => giaiXml(html.match(new RegExp(`<meta
 
 export async function baiBlog(tu: number, den: number): Promise<MucBanTin[]> {
   const tok = (process.env.APP_GH_TOKEN || "").trim();
-  const h: Record<string, string> = { Accept: "application/vnd.github+json", "User-Agent": "ops-hub-ban-tin-tuan", ...(tok ? { Authorization: `Bearer ${tok}` } : {}) };
+  const h: Record<string, string> = { Accept: "application/vnd.github+json", "User-Agent": "ikihealing-hub-ban-tin-tuan", ...(tok ? { Authorization: `Bearer ${tok}` } : {}) };
   const api = "https://api.github.com/repos/your-org/nova-website";
   const ds: any[] = JSON.parse(await layText(`${api}/commits?path=blog&since=${new Date(tu).toISOString()}&until=${new Date(den).toISOString()}&per_page=50`, { headers: h }, 1800));
   const slug = new Set<string>();

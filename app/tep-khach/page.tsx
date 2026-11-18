@@ -9,7 +9,7 @@ import { layDoanhThuNhieuThang } from "@/lib/doanh-thu";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tệp khách theo dòng sản phẩm | ACME Ops Hub") };
+  return { title: t("Tệp khách theo dòng sản phẩm | IKIHEALING Hub") };
 }
 
 const tr = (n: number) => `${(Math.round(n / 1e5) / 10).toLocaleString("vi-VN")}tr`;

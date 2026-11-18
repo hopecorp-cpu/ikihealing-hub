@@ -5,7 +5,7 @@ import { getConfigValue } from "@/lib/app-config";
 import XuongVideoClient from "./XuongVideoClient";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Xưởng video đại lý | ACME Ops Hub" };
+export const metadata = { title: "Xưởng video đại lý | IKIHEALING Hub" };
 
 export default async function Page() {
   await requireManager();

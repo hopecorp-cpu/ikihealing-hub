@@ -10,7 +10,7 @@ import CaTrucClient from "./CaTrucClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Ca trực AI | ACME Ops Hub") };
+  return { title: t("Ca trực AI | IKIHEALING Hub") };
 }
 
 export default async function CaTrucPage() {

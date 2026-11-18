@@ -11,7 +11,7 @@ import HopDongClient from "./HopDongClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Hồ sơ & Hợp đồng NV | ACME Ops Hub") };
+  return { title: t("Hồ sơ & Hợp đồng NV | IKIHEALING Hub") };
 }
 
 const WHITELIST = FINANCE_WHITELIST;

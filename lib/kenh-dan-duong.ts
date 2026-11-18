@@ -47,7 +47,7 @@ export function taoMa(kenh: string, slug: string, lan = 0): string {
   return h.toString(36).padStart(6, "0").slice(0, 6);
 }
 
-export const linkDan = (ma: string, goc = "https://ops-hub.example.com") => `${goc}/di/${ma}`;
+export const linkDan = (ma: string, goc = "https://ikihealing-hub.example.com") => `${goc}/di/${ma}`;
 
 export function linkDich(l: LinkDan): string {
   if (l.dich) return l.dich;

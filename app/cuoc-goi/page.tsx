@@ -6,7 +6,7 @@ import { PhoneCall, Trophy } from "lucide-react";
 import { BUCKET_GHI_AM } from "@/lib/cuoc-goi";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Ghi âm cuộc gọi | ACME Ops Hub" };
+export const metadata = { title: "Ghi âm cuộc gọi | IKIHEALING Hub" };
 
 export default async function Page() {
   const user = await getCurrentUser();

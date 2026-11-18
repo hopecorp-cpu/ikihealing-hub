@@ -10,7 +10,7 @@ import { nhanKhachOa } from "@/lib/zalo-oa-che-do";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tin chờ duyệt | ACME Ops Hub") };
+  return { title: t("Tin chờ duyệt | IKIHEALING Hub") };
 }
 
 export default async function Page() {

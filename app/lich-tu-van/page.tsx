@@ -8,7 +8,7 @@ import ConsultClient from "./ConsultClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Lịch tư vấn 1-1 | ACME Ops Hub") };
+  return { title: t("Lịch tư vấn 1-1 | IKIHEALING Hub") };
 }
 
 export default async function Page({ searchParams }: { searchParams?: { ngay?: string } }) {

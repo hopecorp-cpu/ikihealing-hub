@@ -138,7 +138,7 @@ const SOURCES: { key: string; label: string; maxHours: number; fix: string; opti
 async function checkWebAlive(): Promise<SourceHealth> {
   const url = `${APP_URL}/login`;
   const base: Omit<SourceHealth, "ok" | "note"> = {
-    key: "web_alive", label: "Web ops-hub (người dùng vào được không)", ageHours: null, maxHours: 0,
+    key: "web_alive", label: "Web ikihealing-hub (người dùng vào được không)", ageHours: null, maxHours: 0,
     fix: "kiểm tên miền + chứng chỉ SSL trên Vercel (vercel certs ls). Đổi địa chỉ: đặt NEXT_PUBLIC_APP_URL",
   };
   try {
@@ -562,7 +562,7 @@ export async function checkAllSources(): Promise<SourceHealth[]> {
       key: "push_last", label: "Web push tới điện thoại sale", ageHours: age, maxHours: 14,
       ok: !khong24 && !hut && !dung, note,
       fix: khong24
-        ? "sale mở ops-hub.example.com trên điện thoại (iPhone: Chia sẻ → Thêm vào MH chính), bấm chuông → Cho phép, rồi Gửi thử; xem /admin/push"
+        ? "sale mở ikihealing-hub.example.com trên điện thoại (iPhone: Chia sẻ → Thêm vào MH chính), bấm chuông → Cho phép, rồi Gửi thử; xem /admin/push"
         : hut
           ? "kiểm VAPID_PUBLIC_KEY/VAPID_PRIVATE_KEY/VAPID_SUBJECT trên Vercel (vercel env ls production) và POST /api/push/test; thiết bị hết hạn thì sale bật lại chuông"
           : "máy Mac chạy: node scripts/gen-sale-alerts.mjs (launchd com.acme.sale-alerts)",

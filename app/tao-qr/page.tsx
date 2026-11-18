@@ -6,7 +6,7 @@ import QrClient from "./QrClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tạo mã QR | ACME Ops Hub") };
+  return { title: t("Tạo mã QR | IKIHEALING Hub") };
 }
 
 export default async function Page() {

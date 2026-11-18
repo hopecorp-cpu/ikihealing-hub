@@ -11,7 +11,7 @@ import { MessageSquare, UsersRound, Clock, WifiOff, AlertTriangle, ArrowRight } 
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tổng quan Zalo | ACME Ops Hub") };
+  return { title: t("Tổng quan Zalo | IKIHEALING Hub") };
 }
 
 export default async function TongQuanZaloPage() {

@@ -367,7 +367,7 @@ export async function POST(req: Request) {
       await sendBrainTelegram(chatId, t ? `\u{2713} Đã duyệt việc ${id}.\n${tgEscape(await cc.loiHuaThat())}` : `Không thấy việc ${id} đang chờ duyệt.`);
     }
     else if (act.toLowerCase() === "tuchoi") { const t = await cc.reject(id); await sendBrainTelegram(chatId, t ? `Đã từ chối việc ${id}.` : `Không thấy việc ${id}.`); }
-    else { const orig = await cc.getTask(id); await cc.addTask(chuViecDeploy(id), orig?.project || "ops-hub", chatId, senderName); await sendBrainTelegram(chatId, `\u{1F680} Đã tạo việc DEPLOY cho ${id} — anh /duyet nó để Claude Code deploy.`); }
+    else { const orig = await cc.getTask(id); await cc.addTask(chuViecDeploy(id), orig?.project || "ikihealing-hub", chatId, senderName); await sendBrainTelegram(chatId, `\u{1F680} Đã tạo việc DEPLOY cho ${id} — anh /duyet nó để Claude Code deploy.`); }
     return NextResponse.json({ ok: true });
   }
 

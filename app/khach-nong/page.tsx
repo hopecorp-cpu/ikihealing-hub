@@ -8,7 +8,7 @@ import type { KetQuaCham } from "@/lib/cham-diem-zalo";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Khách nóng Zalo | ACME Ops Hub") };
+  return { title: t("Khách nóng Zalo | IKIHEALING Hub") };
 }
 
 export default async function Page() {

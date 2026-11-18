@@ -9,7 +9,7 @@ import AdminAppsClient from "./AdminAppsClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Quản trị app AI | ACME Ops Hub") };
+  return { title: t("Quản trị app AI | IKIHEALING Hub") };
 }
 
 export default async function Page() {

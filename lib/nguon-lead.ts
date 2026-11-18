@@ -110,7 +110,7 @@ const KENH_REF: [RegExp, string][] = [
   [/zalo/, "Zalo"],
   [/pinterest/, "Pinterest"],
   [/bing|duckduckgo|coccoc|yandex/, "Tìm kiếm khác"],
-  [/example|ops-hub|sanphamaprotein/, "Web NOVA (nội bộ)"],
+  [/example|ikihealing-hub|sanphamaprotein/, "Web NOVA (nội bộ)"],
 ];
 
 export function xepKenh(source: string, channel?: string | null): { kenh: string; chiTiet: string; doan: boolean } {

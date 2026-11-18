@@ -41,6 +41,6 @@ export function quyenBatLaiCampaign(fromId: unknown, ceoId: unknown, nguoiDang: 
 export function chuViecDeploy(id: string): string {
   return `[DEPLOY] Đẩy lên production thay đổi của việc ${id}. Theo luật vàng #15 + mục 1b CLAUDE.md: CẤM gõ thẳng vercel --prod. `
     + `Chỉ deploy commit ĐÃ ĐẨY lên origin/main: dựng worktree sạch tách từ origin/main mới nhất (git fetch origin), `
-    + `kiểm git status --porcelain rỗng và git branch -r --contains HEAD có origin/main, rồi chạy scripts/deploy-prod.sh trong worktree đó (repo khác ops-hub: script deploy tương đương của repo đó, không có thì DỪNG và báo). `
+    + `kiểm git status --porcelain rỗng và git branch -r --contains HEAD có origin/main, rồi chạy scripts/deploy-prod.sh trong worktree đó (repo khác ikihealing-hub: script deploy tương đương của repo đó, không có thì DỪNG và báo). `
     + `Sai một điều thì KHÔNG deploy, báo lại lý do. Không dùng --du-biet.`;
 }

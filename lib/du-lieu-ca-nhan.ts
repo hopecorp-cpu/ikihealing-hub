@@ -162,7 +162,7 @@ export function kiemTokenHuy(email: string, token: string): boolean {
   return a.length === b.length && crypto.timingSafeEqual(a, b);
 }
 export function linkHuy(email: string): string {
-  const base = process.env.NEXT_PUBLIC_APP_URL || "https://ops-hub.example.com";
+  const base = process.env.NEXT_PUBLIC_APP_URL || "https://ikihealing-hub.example.com";
   return `${base}/api/huy-nhan?e=${encodeURIComponent(chuanEmail(email) || "")}&t=${tokenHuy(email)}`;
 }
 

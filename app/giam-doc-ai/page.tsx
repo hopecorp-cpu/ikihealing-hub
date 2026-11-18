@@ -10,7 +10,7 @@ import { GiamDocAIClient } from "./Client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Giám đốc Kinh doanh AI | ACME Ops Hub") };
+  return { title: t("Giám đốc Kinh doanh AI | IKIHEALING Hub") };
 }
 
 export default async function Page() {

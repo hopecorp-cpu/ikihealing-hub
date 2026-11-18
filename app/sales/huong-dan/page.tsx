@@ -8,7 +8,7 @@ import guide from "@/data/sale-guide.json";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Hướng dẫn cho Sale | ACME Ops Hub") };
+  return { title: t("Hướng dẫn cho Sale | IKIHEALING Hub") };
 }
 
 export default async function SaleGuidePage() {

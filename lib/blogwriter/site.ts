@@ -145,7 +145,7 @@ export function renderArticleHtml(post: BlogPost): string {
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-XXXXXXXXXX');gtag('config','AW-18332022859');</script>
   <meta name="referrer" content="strict-origin-when-cross-origin" />
-  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; base-uri 'self'; object-src 'none'; form-action 'self' https://formsubmit.co https://formspree.io https://ops-hub.example.com;" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests; base-uri 'self'; object-src 'none'; form-action 'self' https://formsubmit.co https://formspree.io https://ikihealing-hub.example.com;" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>${t}</title>
   <meta name="description" content="${d}" />
@@ -291,7 +291,7 @@ ${lamNgayHtml}
       <span class="lead-tag">Miễn phí</span>
       <h2>Nhận cẩm nang chăm sóc sức khoẻ chủ động</h2>
       <p>Cẩm nang PDF hướng dẫn lộ trình 6 chặng theo thể tạng — gửi ngay vào email của bạn.</p>
-      <form class="signup-form lead-form" action="https://ops-hub.example.com/api/blog-lead" method="POST" novalidate>
+      <form class="signup-form lead-form" action="https://ikihealing-hub.example.com/api/blog-lead" method="POST" novalidate>
         <input type="hidden" name="source" value="blog:article:${post.slug}" />
         <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="lead-row">
@@ -373,7 +373,7 @@ ${lamNgayHtml}
       </div>
     </div>
   </footer>
-<script>(function(){var T='https://ops-hub.example.com/api/track';function lid(){try{var u=new URLSearchParams(location.search).get('lid');if(u){sessionStorage.setItem('nova_lid',u);return u;}return sessionStorage.getItem('nova_lid')||'';}catch(e){return '';}}function b(e,m){var id=lid();if(!id)return;var i=new Image();i.src=T+'?lid='+encodeURIComponent(id)+'&e='+e+(m?'&m='+encodeURIComponent(m):'')+'&_='+Date.now();}var s=location.pathname.split('/').pop().replace(/\\.html$/,'')||'index';if(lid())b('read',s);document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/\\.pdf($|\\?)/i.test(h))b('download',(h.split('/').pop()||'pdf').slice(0,60));else if(/example|example\\.com\\/shop|tra\\.example|tra-b\\.example|app\\.html/.test(h))b('click',h.slice(0,80));},true);})();</script>
+<script>(function(){var T='https://ikihealing-hub.example.com/api/track';function lid(){try{var u=new URLSearchParams(location.search).get('lid');if(u){sessionStorage.setItem('nova_lid',u);return u;}return sessionStorage.getItem('nova_lid')||'';}catch(e){return '';}}function b(e,m){var id=lid();if(!id)return;var i=new Image();i.src=T+'?lid='+encodeURIComponent(id)+'&e='+e+(m?'&m='+encodeURIComponent(m):'')+'&_='+Date.now();}var s=location.pathname.split('/').pop().replace(/\\.html$/,'')||'index';if(lid())b('read',s);document.addEventListener('click',function(ev){var a=ev.target.closest&&ev.target.closest('a');if(!a)return;var h=a.getAttribute('href')||'';if(/\\.pdf($|\\?)/i.test(h))b('download',(h.split('/').pop()||'pdf').slice(0,60));else if(/example|example\\.com\\/shop|tra\\.example|tra-b\\.example|app\\.html/.test(h))b('click',h.slice(0,80));},true);})();</script>
 ${taoPopup(chonSlugSanPham(post))}
 </body>
 </html>

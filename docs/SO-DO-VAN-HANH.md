@@ -1,4 +1,4 @@
-# Sơ đồ vận hành Ops Hub
+# Sơ đồ vận hành IKIHEALING Hub
 
 Tài liệu này mô tả hệ thống chạy thế nào: dữ liệu đi đâu, ai làm gì, máy được tự làm tới đâu, và những nguyên tắc rút ra khi vận hành thật.
 
@@ -44,7 +44,7 @@ flowchart LR
 ```mermaid
 sequenceDiagram
   participant NV as Nhân viên
-  participant APP as Ops Hub
+  participant APP as IKIHEALING Hub
   participant MAY as Máy chạy nền
   participant QL as Quản lý
   MAY->>APP: Đầu ngày: rã mục tiêu tháng thành kế hoạch ngày, giao việc

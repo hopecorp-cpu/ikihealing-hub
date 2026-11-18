@@ -5,7 +5,7 @@ import { isManagerOrAbove } from "@/lib/auth";
 import AppsClient from "./AppsClient";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Kho app AI | ACME Ops Hub" };
+export const metadata = { title: "Kho app AI | IKIHEALING Hub" };
 
 export default async function Page() {
   const user = await getCurrentUser();

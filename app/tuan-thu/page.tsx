@@ -9,7 +9,7 @@ import ComplianceClient from "./ComplianceClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tuân thủ pháp lý | ACME Ops Hub") };
+  return { title: t("Tuân thủ pháp lý | IKIHEALING Hub") };
 }
 
 export default async function CompliancePage() {

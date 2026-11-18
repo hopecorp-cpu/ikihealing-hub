@@ -10,7 +10,7 @@ import { layDoanhThuNhieuThang, gopTenSaleTuSo } from "@/lib/doanh-thu";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Chăm sóc khách | ACME Ops Hub") };
+  return { title: t("Chăm sóc khách | IKIHEALING Hub") };
 }
 
 const norm = (s: string) => (s || "").toLowerCase().trim().replace(/\s+/g, " ");

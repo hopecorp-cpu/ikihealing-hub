@@ -12,7 +12,7 @@ import HoaHongClient from "./HoaHongClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("KPI & Hoa hồng Sale | ACME Ops Hub") };
+  return { title: t("KPI & Hoa hồng Sale | IKIHEALING Hub") };
 }
 
 const norm = (s: string) => (s || "").toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/đ/g, "d").replace(/\s+/g, " ").trim();

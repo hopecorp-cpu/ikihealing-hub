@@ -10,7 +10,7 @@ import { Wallet, Boxes, Landmark, Users, Repeat, UserPlus, Activity, Database, U
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bảng Tài Sản | ACME Ops Hub") };
+  return { title: t("Bảng Tài Sản | IKIHEALING Hub") };
 }
 
 export default async function TaiSanPage({ searchParams }: { searchParams: { m?: string } }) {

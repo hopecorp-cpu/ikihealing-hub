@@ -10,7 +10,7 @@ import NhomClient from "./NhomClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Nhóm Zalo | ACME Ops Hub") };
+  return { title: t("Nhóm Zalo | IKIHEALING Hub") };
 }
 
 export default async function NhomZaloPage() {

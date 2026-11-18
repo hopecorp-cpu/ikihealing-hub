@@ -9,7 +9,7 @@ import { docCaiDat, KEY_NHAT_KY, KEY_BAI_HOC, type NhatKy, KEY_THU_HANG, KEY_TU_
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Agent SEO | ACME Ops Hub") };
+  return { title: t("Agent SEO | IKIHEALING Hub") };
 }
 
 const NHOM: [string, string][] = [["sieuRong", "Siêu rộng"], ["dai", "Dài"], ["nganh", "Ngành"], ["sanPham", "Sản phẩm"], ["ngan", "Ngắn"], ["diaLy", "Địa lý"], ["trend", "Xu hướng 24-72h"]];

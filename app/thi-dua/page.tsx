@@ -10,7 +10,7 @@ import { Trophy, Flame, Target, Gift, Medal, TrendingUp } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bảng vinh danh | ACME Ops Hub") };
+  return { title: t("Bảng vinh danh | IKIHEALING Hub") };
 }
 
 const RANK_CLR = ["text-amber-500", "text-gray-400", "text-orange-600"];

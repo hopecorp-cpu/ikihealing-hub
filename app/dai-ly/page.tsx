@@ -9,7 +9,7 @@ import DaiLyClient, { type NppNoiBo } from "./DaiLyClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Đại lý & NPP | ACME Ops Hub") };
+  return { title: t("Đại lý & NPP | IKIHEALING Hub") };
 }
 
 function anNpp(bang: BangDaiLy): BangDaiLy {

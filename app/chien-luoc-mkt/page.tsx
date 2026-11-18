@@ -11,7 +11,7 @@ import ResearchNowButton from "./ResearchNowButton";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Chiến lược Marketing | ACME Ops Hub") };
+  return { title: t("Chiến lược Marketing | IKIHEALING Hub") };
 }
 
 export default async function StrategyPage() {

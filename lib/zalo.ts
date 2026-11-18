@@ -32,7 +32,7 @@ export function credentialsMessage(opts: {
 }): string {
   return `Chào ${opts.fullName.split(" ").slice(-1)[0]},
 
-Em/Anh gửi tài khoản ACME Ops Hub:
+Em/Anh gửi tài khoản IKIHEALING Hub:
 
 Link: ${opts.loginUrl}
 Email: ${opts.email}

@@ -13,7 +13,7 @@ import { Activity, CheckCircle2, AlertTriangle, HelpCircle, Server, Laptop, List
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Máy chạy ngầm | ACME Ops Hub") };
+  return { title: t("Máy chạy ngầm | IKIHEALING Hub") };
 }
 
 export default async function Page() {

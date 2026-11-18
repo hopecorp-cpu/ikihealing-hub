@@ -29,7 +29,7 @@ export async function GET(req: Request) {
         ...Object.entries(kq.perSale).map(([sale, n]) => `- ${sale}: ${n} khách`),
       ];
       if (kq.unmatched) lines.push(`(${kq.unmatched} khách chưa khớp sale — nằm trong task của anh để phân công)`);
-      lines.push("Danh sách chi tiết trong /tasks của ops-hub, tag chu-ky-dat-lai.");
+      lines.push("Danh sách chi tiết trong /tasks của ikihealing-hub, tag chu-ky-dat-lai.");
       await covanSendCEO(lines.join("\n"));
     }
     return NextResponse.json({ ok: true, ...kq });

@@ -996,7 +996,7 @@ export function dungBaoCao(month: string, xt: XemTruocLuong, hh: HoaHongThang | 
   L.push("<b>VIỆC CẦN ANH QUYẾT</b>");
   for (const v of viecCanCeo(xt, hh, month)) L.push(`- ${esc(v)}`);
   L.push("");
-  L.push(`Mở bảng: ops-hub.example.com/bang-luong?m=${month} — duyệt xong nhân viên mới xem được phiếu.`);
+  L.push(`Mở bảng: ikihealing-hub.example.com/bang-luong?m=${month} — duyệt xong nhân viên mới xem được phiếu.`);
 
   const text = L.join("\n");
   const markdown = text.replace(/<\/?b>/g, "**").replace(/<\/?i>/g, "_").replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&amp;/g, "&");

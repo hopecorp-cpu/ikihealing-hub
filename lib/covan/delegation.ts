@@ -74,7 +74,7 @@ export async function createTask(brief: PendingBrief): Promise<
 > {
   const users = await activeUsers();
   const ceo = users.find((u) => u.full_name === CEO_NAME);
-  if (!ceo) return { ok: false, error: "Không tìm thấy user CEO trong ops-hub" };
+  if (!ceo) return { ok: false, error: "Không tìm thấy user CEO trong ikihealing-hub" };
   const dueDate = new Date(Date.now() + 7 * 3600e3 + (brief.due_days || 3) * 86400e3)
     .toISOString()
     .slice(0, 10);

@@ -9,7 +9,7 @@ import { LayoutGrid, ArrowUpRight } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Điểm phòng ban | ACME Ops Hub") };
+  return { title: t("Điểm phòng ban | IKIHEALING Hub") };
 }
 
 const DOT: Record<Light, string> = { green: "bg-emerald-500", yellow: "bg-amber-500", red: "bg-red-500", gray: "bg-gray-300" };

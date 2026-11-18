@@ -13,7 +13,7 @@ import { getT } from "@/lib/i18n-server";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bản tin sáng | ACME Ops Hub") };
+  return { title: t("Bản tin sáng | IKIHEALING Hub") };
 }
 
 export default async function BriefPage() {

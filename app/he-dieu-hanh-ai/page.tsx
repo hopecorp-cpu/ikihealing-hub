@@ -13,7 +13,7 @@ import { docDoLuongAi } from "@/lib/do-luong-ai";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bản đồ Hệ điều hành AI | ACME Ops Hub") };
+  return { title: t("Bản đồ Hệ điều hành AI | IKIHEALING Hub") };
 }
 
 export default async function Page() {

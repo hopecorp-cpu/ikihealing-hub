@@ -11,7 +11,7 @@ import { Gauge, AlertTriangle, Wallet, Users, ShoppingBag, UserPlus } from "luci
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Phễu MKT | ACME Ops Hub") };
+  return { title: t("Phễu MKT | IKIHEALING Hub") };
 }
 
 const vnd = (v: number | null | undefined) => (v == null ? "—" : Math.round(v).toLocaleString("vi-VN") + "đ");

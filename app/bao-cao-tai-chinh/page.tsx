@@ -7,7 +7,7 @@ import { ganHangMuc } from "./actions";
 import { TriangleAlert, Info } from "lucide-react";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Báo cáo tài chính | ACME Ops Hub" };
+export const metadata = { title: "Báo cáo tài chính | IKIHEALING Hub" };
 
 const CHE: { key: CheDoKy; nhan: string }[] = [
   { key: "tuan", nhan: "Tuần" }, { key: "thang", nhan: "Tháng" }, { key: "quy", nhan: "Quý" }, { key: "nam", nhan: "Năm" },

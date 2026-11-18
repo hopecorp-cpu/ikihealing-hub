@@ -12,7 +12,7 @@ import { tenGoiCuaNick } from "@/lib/zalo-nick-sale";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Đánh giá cá nhân | ACME Ops Hub") };
+  return { title: t("Đánh giá cá nhân | IKIHEALING Hub") };
 }
 
 const norm = (s: string) => (s || "").toLowerCase().replace(/\s+/g, " ").trim();

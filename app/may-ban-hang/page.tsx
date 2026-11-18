@@ -38,7 +38,7 @@ export default async function MayBanHangPage() {
       <div className="text-[12px] text-gray-500 bg-gray-50 border border-gray-200 rounded-xl p-4 space-y-1.5">
         <div className="font-semibold text-gray-700">{t("Bật trả lời tự động cần 3 bước một lần duy nhất:")}</div>
         <div>{t("1. Đặt biến")} <code>FB_VERIFY_TOKEN</code> {t("trên Vercel (chuỗi bất kỳ do anh tự đặt).")}</div>
-        <div>{t("2. Trong Meta App → Webhooks → Page: dán địa chỉ")} <code>https://ops-hub.example.com/api/fb/webhook</code>{t(", dán đúng chuỗi trên, chọn trường")} <code>messages</code>.</div>
+        <div>{t("2. Trong Meta App → Webhooks → Page: dán địa chỉ")} <code>https://ikihealing-hub.example.com/api/fb/webhook</code>{t(", dán đúng chuỗi trên, chọn trường")} <code>messages</code>.</div>
         <div>{t("3. Bấm nút")} <b>{t("&ldquo;Đăng ký fanpage nhận tin nhắn&rdquo;")}</b> {t("ở khối trên.")}</div>
         <div className="pt-1">{t("Xong 3 bước mới tick ô Bật ở trên. Chưa xong mà bật thì không có gì xảy ra — không hỏng gì.")}</div>
       </div>

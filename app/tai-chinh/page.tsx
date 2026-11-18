@@ -9,7 +9,7 @@ import { computeCashFlow } from "@/lib/cashflow";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Chi phí & Lợi nhuận | ACME Ops Hub") };
+  return { title: t("Chi phí & Lợi nhuận | IKIHEALING Hub") };
 }
 
 export default async function TaiChinhPage() {

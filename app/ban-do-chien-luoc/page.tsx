@@ -9,7 +9,7 @@ import StrategyMapClient from "./StrategyMapClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bản đồ chiến lược | ACME Ops Hub") };
+  return { title: t("Bản đồ chiến lược | IKIHEALING Hub") };
 }
 
 export default async function Page() {

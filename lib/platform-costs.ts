@@ -20,8 +20,8 @@ const SEED: Cost[] = [
   { id: "openai", name: "OpenAI / ChatGPT", category: "AI", what: "Dùng chung", monthlyVnd: null },
   { id: "claude_code", name: "Claude Code", category: "AI", what: "Xây và vận hành toàn bộ hệ thống này", monthlyVnd: null },
 
-  { id: "vercel", name: "Vercel", category: "Hạ tầng", what: "Chạy ops-hub, NOVA app, MKT Studio, các sale page", monthlyVnd: null },
-  { id: "supabase", name: "Supabase", category: "Hạ tầng", what: "Cơ sở dữ liệu + đăng nhập của ops-hub", monthlyVnd: null },
+  { id: "vercel", name: "Vercel", category: "Hạ tầng", what: "Chạy ikihealing-hub, NOVA app, MKT Studio, các sale page", monthlyVnd: null },
+  { id: "supabase", name: "Supabase", category: "Hạ tầng", what: "Cơ sở dữ liệu + đăng nhập của ikihealing-hub", monthlyVnd: null },
   { id: "turso", name: "Turso", category: "Hạ tầng", what: "Cơ sở dữ liệu MKT Studio", monthlyVnd: null },
   { id: "domain", name: "Tên miền (example.vn, example.com)", category: "Hạ tầng", what: "Địa chỉ web", monthlyVnd: null },
 

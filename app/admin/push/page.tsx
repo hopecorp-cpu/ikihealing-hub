@@ -7,7 +7,7 @@ import { BellRing } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Thông báo điện thoại | ACME Ops Hub") };
+  return { title: t("Thông báo điện thoại | IKIHEALING Hub") };
 }
 
 const SALE_DEPT = "Kinh Doanh & Sale";

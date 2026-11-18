@@ -10,7 +10,7 @@ import { MapIcon, ArrowUpRight } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bản đồ tính năng | ACME Ops Hub") };
+  return { title: t("Bản đồ tính năng | IKIHEALING Hub") };
 }
 
 export default async function Page() {

@@ -12,7 +12,7 @@ import { Stat } from "@/components/stat";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Hiệu quả chăm sóc | ACME Ops Hub") };
+  return { title: t("Hiệu quả chăm sóc | IKIHEALING Hub") };
 }
 
 const slice10 = (s: any) => (s || "").toString().slice(0, 10);

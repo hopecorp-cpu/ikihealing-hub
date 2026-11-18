@@ -9,7 +9,7 @@ import CopyReply from "./CopyReply";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Sổ tay trực trang | ACME Ops Hub") };
+  return { title: t("Sổ tay trực trang | IKIHEALING Hub") };
 }
 
 export default async function SoTayTrucTrangPage() {

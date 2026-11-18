@@ -9,7 +9,7 @@ import Client from "./Client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Góp ý BOD | ACME Ops Hub") };
+  return { title: t("Góp ý BOD | IKIHEALING Hub") };
 }
 
 export default async function Page() {

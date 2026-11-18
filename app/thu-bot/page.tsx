@@ -9,7 +9,7 @@ import ThuBotClient from "./Client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Thử bot trả lời khách | ACME Ops Hub") };
+  return { title: t("Thử bot trả lời khách | IKIHEALING Hub") };
 }
 
 export default async function Page() {

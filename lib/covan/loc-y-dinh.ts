@@ -79,7 +79,7 @@ export function nghiInjection(s: string): boolean {
 export const TU_CHOI_PII =
   "Em không cung cấp tên, số điện thoại, địa chỉ hay thông tin liên hệ của khách qua chat — kể cả " +
   "chat riêng, vì tin nhắn có thể bị chuyển tiếp hoặc lưu ở nơi không kiểm soát được. " +
-  "Anh/chị xem trực tiếp ở trang Khách 360 của ops-hub (có đăng nhập, phân quyền): {LINK}\n" +
+  "Anh/chị xem trực tiếp ở trang Khách 360 của ikihealing-hub (có đăng nhập, phân quyền): {LINK}\n" +
   "Em vẫn giúp được các câu KHÔNG định danh: số khách, tỉ lệ mua lại, nhóm khách theo giá trị, " +
   "khách nào đang chờ trả lời (đếm), kịch bản chăm sóc.";
 

@@ -7,7 +7,7 @@ import { isBodRole, isManagerOrAbove } from "@/lib/auth";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Báo cáo tháng | ACME Ops Hub") };
+  return { title: t("Báo cáo tháng | IKIHEALING Hub") };
 }
 
 export default async function BaoCaoThangPage({ searchParams }: { searchParams: { m?: string } }) {

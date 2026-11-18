@@ -12,7 +12,7 @@ import HopDuyetClient from "./Client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Hộp duyệt | ACME Ops Hub") };
+  return { title: t("Hộp duyệt | IKIHEALING Hub") };
 }
 
 export default async function Page() {

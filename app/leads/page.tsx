@@ -9,7 +9,7 @@ import { maCtvTuGhiChu } from "@/lib/affiliate-don";
 import LeadsClient from "./LeadsClient";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Chia lead | ACME Ops Hub" };
+export const metadata = { title: "Chia lead | IKIHEALING Hub" };
 
 export default async function Page() {
   const user = await getCurrentUser();
