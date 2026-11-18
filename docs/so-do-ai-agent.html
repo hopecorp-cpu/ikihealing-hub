@@ -66,7 +66,8 @@ a { color: var(--green); }
 .boss { max-width: 520px; width: 100%; border: 2px solid var(--gold); text-align: center; background: var(--gold-soft); }
 .boss h3 { font-size: 18px; }
 .vline { width: 2px; height: 26px; background: var(--wire); margin: 0 auto; }
-.vline.label { height: auto; background: none; display: grid; justify-items: center; }
+.vline.label { width: auto; height: auto; background: none; display: grid; justify-items: center; }
+.vline.label span { white-space: nowrap; }
 .vline.label span { font-size: 12px; font-weight: 600; color: var(--gold); background: var(--bg); border: 1px solid var(--line); border-radius: 4px; padding: 2px 8px; }
 .vline.label::before, .vline.label::after { content: ""; width: 2px; height: 12px; background: var(--wire); }
 .orch { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 12px; max-width: 820px; width: 100%; }
