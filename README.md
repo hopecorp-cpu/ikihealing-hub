@@ -4,6 +4,8 @@ Hệ điều hành nội bộ cho doanh nghiệp nhỏ bán lẻ ở Việt Nam 
 
 Phần mềm được tách ra từ hệ thống một công ty đang vận hành thật. Toàn bộ dữ liệu, tên người, giá bán và cấu hình riêng đã được thay bằng dữ liệu mẫu. Công ty mẫu trong code tên là **ACME Corp**, thương hiệu bán lẻ là **NOVA**, sản phẩm là **Sản phẩm A, B, C**. Bạn đổi các tên này thành của mình.
 
+Trang giới thiệu bằng hình ảnh: https://hopecorp-cpu.github.io/ikihealing-hub/
+
 English: [README.en.md](README.en.md)
 
 - Sơ đồ vận hành: [docs/SO-DO-VAN-HANH.md](docs/SO-DO-VAN-HANH.md)
