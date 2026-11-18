@@ -29,6 +29,8 @@ export default async function Page() {
     layBanDoMay().catch(() => null),
   ]);
   const badSources = sources.filter((s) => !s.ok);
+  const chuaCauHinh = sources.filter((s) => s.tat && s.note.startsWith("chưa cấu hình"));
+  const choChay = sources.filter((s) => s.tat && s.note === "chờ lần chạy đầu");
 
   const coViec = !!hangDoi && (hangDoi.choDuyet + hangDoi.daDuyetChoLam + hangDoi.dangLam) > 0;
   const tacNghen = !!hangDoi && hangDoi.daDuyetChoLam > 0 && !hangDoi.nhip.song;
@@ -59,9 +61,9 @@ export default async function Page() {
             {banDo.dem.chetKhongChayLaiDuoc > 0 && (
               <span className="text-amber-800">{banDo.dem.chetKhongChayLaiDuoc} {t("trong số đứt cần chính tay anh (captcha/OTP/quét QR, hoặc chạy lại sẽ gửi trùng)")}</span>
             )}
-            <span className={banDo.nhipMac.song ? "text-gray-400 ml-auto" : "text-amber-800 ml-auto font-semibold"}>
+            {banDo.nhipMac.gio !== null && <span className={banDo.nhipMac.song ? "text-gray-400 ml-auto" : "text-amber-800 ml-auto font-semibold"}>
               {t("Máy văn phòng:")} {banDo.nhipMac.song ? t("đang chạy (nhịp {h}h trước)").replace("{h}", String(banDo.nhipMac.gio)) : banDo.nhipMac.gio === null ? t("chưa từng báo nhịp") : t("TẮT (nhịp {h}h trước)").replace("{h}", String(banDo.nhipMac.gio))}
-            </span>
+            </span>}
           </div>
           <BanDoMay chuoi={banDo.chuoi} nhipMac={banDo.nhipMac} />
         </>
@@ -89,6 +91,13 @@ export default async function Page() {
               {" "}{t("(chạy tay:")} <code>node scripts/cc-worker.mjs</code>).
             </div>
           )}
+        </div>
+      )}
+
+      {(choChay.length > 0 || chuaCauHinh.length > 0) && (
+        <div className="rounded-2xl border border-gray-100 bg-white shadow-sm px-4 py-3 text-[12.5px] text-gray-500">
+          {chuaCauHinh.length > 0 && <div>{chuaCauHinh.length} {t("nguồn chưa cấu hình (thiếu khoá dịch vụ, xem bảng trong README):")} {chuaCauHinh.map((s) => t(s.label)).join(", ")}</div>}
+          {choChay.length > 0 && <div className="mt-1">{choChay.length} {t("nguồn chờ lần chạy đầu (tác vụ hẹn giờ chưa chạy lần nào):")} {choChay.map((s) => t(s.label)).join(", ")}</div>}
         </div>
       )}
 
