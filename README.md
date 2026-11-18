@@ -4,6 +4,8 @@ Hệ điều hành nội bộ cho doanh nghiệp nhỏ bán lẻ ở Việt Nam 
 
 Phần mềm được tách ra từ hệ thống một công ty đang vận hành thật. Toàn bộ dữ liệu, tên người, giá bán và cấu hình riêng đã được thay bằng dữ liệu mẫu. Công ty mẫu trong code tên là **ACME Corp**, thương hiệu bán lẻ là **NOVA**, sản phẩm là **Sản phẩm A, B, C**. Bạn đổi các tên này thành của mình.
 
+English: [README.en.md](README.en.md)
+
 - Sơ đồ vận hành: [docs/SO-DO-VAN-HANH.md](docs/SO-DO-VAN-HANH.md)
 - Góp ý tính năng, báo lỗi: mở [Issue](../../issues/new/choose)
 - Cách đóng góp code: [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -20,13 +22,13 @@ Phần mềm được tách ra từ hệ thống một công ty đang vận hàn
 | Kiến thức và quy trình | SOP, kho kiến thức có bài kiểm tra, tuân thủ pháp lý nội dung |
 | Quản trị hệ thống | Watchdog canh nguồn dữ liệu chết, nhật ký máy, két mã hoá khoá API |
 
-Khoảng 130 màn hình, 70 tác vụ hẹn giờ và 100 bảng dữ liệu. Chi tiết ở [sơ đồ vận hành](docs/SO-DO-VAN-HANH.md).
+Khoảng 170 màn hình, 87 tác vụ hẹn giờ và 110 bảng dữ liệu. Chi tiết ở [sơ đồ vận hành](docs/SO-DO-VAN-HANH.md).
 
 ## Công nghệ
 
 Next.js 14 (App Router) · TypeScript · Tailwind · Supabase (Postgres, phân quyền theo dòng, pgvector) · Vercel Cron · Telegram Bot API · Zalo OA · Meta Graph API · Claude và Gemini.
 
-Chạy được trên gói miễn phí của Vercel và Supabase.
+Chạy được trên gói miễn phí của Vercel và Supabase (gói miễn phí của Vercel chỉ cho tác vụ hẹn giờ chạy ngày một lần, xem mục Đưa lên Vercel).
 
 ## Chạy thử trên máy (khoảng 15 phút)
 
@@ -48,25 +50,67 @@ Mở `.env.local`, điền `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANO
 npm run dev
 ```
 
-Mở http://localhost:3000.
+Mở http://localhost:3000 và đăng nhập bằng tài khoản mẫu:
 
-### Tạo tài khoản quản trị đầu tiên
+| Email | Vai trò |
+|---|---|
+| `admin@example.com` | Quản trị, xem được mọi trang |
+| `son@example.com` | Trưởng nhóm sale |
+| `cuc@example.com`, `dao@example.com` | Sale |
+| `hang@example.com` | Marketing |
+| `lan@example.com` | Kế toán |
 
-1. Tạo người dùng trong Supabase (Studio: Authentication, Add user; hoặc trang đăng ký của app).
-2. Trong bảng `users`, sửa dòng vừa tạo: `role` = `admin`, điền `full_name`, `department_id`.
-3. Tải lại app, menu quản trị sẽ hiện.
+Mật khẩu chung: `matkhau-demo`.
+
+### Dữ liệu mẫu
+
+`supabase db reset` nạp sẵn một công ty giả trong `supabase/seed.sql`: 6 nhân viên, 120 khách, 200 lead, khoảng 450 đơn trong 90 ngày gần nhất, việc, chấm công và KPI tháng. Ngày tháng tính theo ngày bạn chạy lệnh, nên mở app là thấy số của tháng hiện tại.
+
+Dữ liệu mẫu chỉ nạp khi chạy trên máy. Lên Supabase thật bằng `supabase db push` thì không nạp, bạn bắt đầu với hệ thống trống.
+
+### Tạo tài khoản thật
+
+App không có trang đăng ký, nhân sự do quản trị cấp tài khoản.
+
+1. Tạo người dùng trong Supabase Studio: Authentication, Add user. Một dòng tương ứng tự sinh ra trong bảng `users`.
+2. Trong bảng `users`, sửa dòng vừa tạo: `role` = `admin` (hoặc `manager`, `employee`), điền `full_name`, `department_id`.
+3. Tải lại app. Từ tài khoản admin, thêm nhân viên khác ở trang Nhân sự.
 
 Tài khoản `admin` xem được mọi trang. Muốn mở trang tài chính, doanh thu, kho tài khoản cho người không phải admin, điền email của họ vào `NEXT_PUBLIC_BOD_EMAILS`, `NEXT_PUBLIC_ACCOUNTANT_EMAILS`, `ACCOUNTS_VAULT_EMAILS` (phân cách bằng dấu phẩy).
 
 Migration cuối `9990_grants_api.sql` bật phân quyền theo dòng (RLS) cho mọi bảng còn thiếu và cấp quyền cho các vai API của Supabase. Bản Supabase mới không tự cấp quyền bảng, thiếu file này thì app báo lỗi quyền.
 
-Các tính năng AI, Telegram, Zalo, Facebook chỉ bật khi bạn điền khoá tương ứng trong `.env.local`. Thiếu khoá thì tính năng đó tự tắt, phần còn lại vẫn chạy.
+## Tính năng nào cần khoá nào
+
+Chỉ 4 biến đầu trong `.env.example` là bắt buộc. Các tính năng khác bật khi bạn điền khoá, thiếu khoá thì tính năng đó tự tắt, phần còn lại vẫn chạy.
+
+| Tính năng | Biến môi trường | Ghi chú |
+|---|---|---|
+| Việc, chấm công, lương, KPI, khách, lead, báo cáo | Supabase, `CRON_SECRET` | Chạy ngay, không cần dịch vụ ngoài |
+| Trợ lý AI, cố vấn, viết bài, lọc CV | `ANTHROPIC_API_KEY`, `GEMINI_API_KEY` | Có thể chỉ dùng một trong hai |
+| Giọng nói, dịch họp | `GEMINI_API_KEY`, `ELEVENLABS_API_KEY` | ElevenLabs không bắt buộc |
+| Bản tin, nhắc việc, bot ghi đơn | `TELEGRAM_*`, `COVAN_*` | Đơn gõ vào nhóm Telegram được AI bóc thành đơn |
+| Hộp thư Zalo, chăm sóc khách | `ZALO_*` | Cần Zalo Official Account |
+| Lead và quảng cáo Facebook | `FB_*`, `META_CAPI_TOKEN` | Trần ngân sách khoá cứng, tự lái mặc định tắt |
+| Google Analytics, Search Console, Gmail, YouTube | `GOOGLE_*`, `GA4_PROPERTY_ID`, `GSC_SITE`, `GMAIL_*` | Dùng service account hoặc OAuth |
+| Gửi email | `RESEND_*` | |
+| Thanh toán | `PAYOS_*`, `ZALOPAY_KEY2` | |
+| Sàn TikTok Shop | `TTS_*` | Mặc định tắt |
+| Phân quyền theo email | `NEXT_PUBLIC_BOD_EMAILS`, `NEXT_PUBLIC_ACCOUNTANT_EMAILS`, `ACCOUNTS_VAULT_EMAILS` | Admin luôn xem được mọi trang |
+
+Các tích hợp Zalo, J&T, MISA, Shopee, TikTok Shop, payOS là dịch vụ ở Việt Nam. Bạn ở nơi khác thì bỏ qua các biến này, hoặc viết module thay thế trong `lib/`.
 
 ## Đưa lên Vercel
 
 1. Tạo project Supabase, chạy các file trong `supabase/migrations` theo thứ tự tên (hoặc `supabase link` rồi `supabase db push`).
-2. Import repo vào Vercel, dán các biến môi trường từ `.env.local`.
-3. Lịch chạy nền nằm trong `vercel.json`. Gói miễn phí của Vercel giới hạn số cron; bỏ bớt những dòng bạn không dùng.
+2. Import repo vào Vercel, dán các biến môi trường từ `.env.local` (đổi URL và khoá sang project Supabase thật).
+3. Lịch chạy nền nằm trong `vercel.json` (87 tác vụ, nhiều tác vụ chạy vài phút một lần, cần gói Pro). Dùng gói miễn phí thì thay bằng bản chỉ gồm 63 tác vụ chạy ngày một lần trước khi deploy:
+
+   ```bash
+   cp vercel.hobby.json vercel.json
+   ```
+
+   Khi đó các việc cần chạy dày (chia lại lead quá hạn, bóc đơn từ nhóm chat, trả lời nhóm Zalo) sẽ không tự chạy. Bạn có thể gọi chúng từ một dịch vụ hẹn giờ ngoài, đường dẫn dạng `/api/cron/<tên>?key=<CRON_SECRET>`.
 
 ## Cấu trúc thư mục
 
@@ -94,6 +138,7 @@ docs/           sơ đồ vận hành
 - Một số module tích hợp dịch vụ bên thứ ba qua phiên đăng nhập trình duyệt (cào dữ liệu hãng vận chuyển, Zalo cá nhân). Kiểm tra điều khoản của dịch vụ đó trước khi dùng.
 - Các script chạy trên máy văn phòng (cào dữ liệu, đăng bài) của hệ thống gốc không nằm trong repo này.
 - Code vốn là hệ thống nội bộ một công ty, nên còn nhiều chỗ đặc thù. Gặp chỗ khó hiểu, mở Issue để hỏi.
+- `npm run typecheck` hiện còn khoảng 80 lỗi kiểu dữ liệu, nên `next.config` đang bật bỏ qua lỗi kiểu khi build. App vẫn chạy bình thường; sửa dần các lỗi này là một chỗ đóng góp tốt.
 
 ## Giấy phép
 

@@ -123,7 +123,7 @@ Sổ đăng ký trợ lý nằm ở `lib/ai-map.ts`. Thêm trợ lý mới là t
 
 ## 5. Lịch máy chạy nền
 
-Khoảng 70 tác vụ trong `vercel.json`. Việc lặp mỗi ngày đặt vào giờ làm buổi sáng (máy văn phòng tắt ban đêm thì việc không chạy); nhiều việc cùng khung thì rải lệch phút.
+Khoảng 87 tác vụ trong `vercel.json`. Việc lặp mỗi ngày đặt vào giờ làm buổi sáng (máy văn phòng tắt ban đêm thì việc không chạy); nhiều việc cùng khung thì rải lệch phút.
 
 | Nhịp | Ví dụ |
 |---|---|
