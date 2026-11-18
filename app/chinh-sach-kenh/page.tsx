@@ -10,7 +10,7 @@ import PolicyClient from "./PolicyClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Chính sách kênh | ACME Ops Hub") };
+  return { title: t("Chính sách kênh | IKIHEALING Hub") };
 }
 
 export default async function Page() {

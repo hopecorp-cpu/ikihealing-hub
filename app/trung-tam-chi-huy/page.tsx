@@ -18,7 +18,7 @@ import {
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Trung tâm chỉ huy | ACME Ops Hub") };
+  return { title: t("Trung tâm chỉ huy | IKIHEALING Hub") };
 }
 
 const SALE_TARGET = 150e6;

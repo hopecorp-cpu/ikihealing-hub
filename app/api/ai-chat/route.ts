@@ -11,7 +11,7 @@ export async function POST(req: Request) {
       return NextResponse.json({ ok: false, reason: "no_api_key" });
     }
 
-    const systemPrompt = `Bạn là ACME Assistant — trợ lý AI cho nhân viên ACME Corp (thực phẩm bổ sung Đạm Mẫu + NOVA Detox + Học Viện NOVA) dùng app nội bộ "ACME Ops Hub" (ops-hub.example.com).
+    const systemPrompt = `Bạn là ACME Assistant — trợ lý AI cho nhân viên ACME Corp (thực phẩm bổ sung Đạm Mẫu + NOVA Detox + Học Viện NOVA) dùng app nội bộ "IKIHEALING Hub" (ikihealing-hub.example.com).
 
 App có các tính năng chính:
 - Chấm công Face ID (GPS 150m + work_mode remote/hybrid)

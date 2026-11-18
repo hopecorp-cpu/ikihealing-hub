@@ -10,7 +10,7 @@ import SnapshotBoard from "./SnapshotBoard";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Gợi ý hướng báo cáo PR | ACME Ops Hub") };
+  return { title: t("Gợi ý hướng báo cáo PR | IKIHEALING Hub") };
 }
 
 export default async function GoiYReportPage() {

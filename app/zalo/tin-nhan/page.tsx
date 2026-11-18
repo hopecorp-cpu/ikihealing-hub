@@ -8,7 +8,7 @@ import HopThuClient from "./HopThuClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tin nhắn Zalo | ACME Ops Hub") };
+  return { title: t("Tin nhắn Zalo | IKIHEALING Hub") };
 }
 
 const khoaNhom = (ten: string) =>

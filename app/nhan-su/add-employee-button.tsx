@@ -148,7 +148,7 @@ export function AddEmployeeButton({ departments }: { departments: Dept[] }) {
 function CreatedAccountView({ account, onNewOne, onClose }: any) {
   const { t } = useLang();
   const [copied, setCopied] = useState<string | null>(null);
-  const loginUrl = typeof window !== "undefined" ? window.location.origin : "https://ops-hub.example.com";
+  const loginUrl = typeof window !== "undefined" ? window.location.origin : "https://ikihealing-hub.example.com";
 
   const copy = (key: string, val: string) => {
     navigator.clipboard.writeText(val);

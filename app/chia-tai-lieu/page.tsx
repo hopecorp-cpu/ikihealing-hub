@@ -7,7 +7,7 @@ import ShareClient from "./ShareClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Gửi tài liệu cho khách | ACME Ops Hub") };
+  return { title: t("Gửi tài liệu cho khách | IKIHEALING Hub") };
 }
 
 const DOCS = [

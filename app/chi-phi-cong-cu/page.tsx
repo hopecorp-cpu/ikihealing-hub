@@ -8,7 +8,7 @@ import CostClient from "./CostClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Chi phí công cụ | ACME Ops Hub") };
+  return { title: t("Chi phí công cụ | IKIHEALING Hub") };
 }
 
 export default async function CostPage() {

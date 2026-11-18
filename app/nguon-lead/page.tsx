@@ -8,7 +8,7 @@ import { docNguonLead, docNguonApp, docBaiFanpage } from "@/lib/nguon-lead-serve
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Nguồn lead | ACME Ops Hub") };
+  return { title: t("Nguồn lead | IKIHEALING Hub") };
 }
 
 const gio = (t: number) => new Date(t + 7 * 3600e3).toISOString().replace("T", " ").slice(5, 16);

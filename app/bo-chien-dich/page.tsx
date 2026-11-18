@@ -9,7 +9,7 @@ import Client from "./client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bổ chiến dịch | ACME Ops Hub") };
+  return { title: t("Bổ chiến dịch | IKIHEALING Hub") };
 }
 
 function thangNay() {

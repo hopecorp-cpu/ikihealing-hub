@@ -4,7 +4,7 @@ import { chuanKenh, chuanTrang, ghiBamChat } from "@/lib/bam-chat";
 
 export const dynamic = "force-dynamic";
 
-const MIEN_CHO_PHEP = ["example.com", "example.com", "ops-hub.example.com"];
+const MIEN_CHO_PHEP = ["example.com", "example.com", "ikihealing-hub.example.com"];
 
 function originChoPhep(origin: string | null): string | null {
   if (!origin) return null;

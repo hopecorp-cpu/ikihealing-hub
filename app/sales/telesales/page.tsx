@@ -9,7 +9,7 @@ import TelesalesPlaybook from "./TelesalesPlaybook";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Kịch bản Telesales | ACME Ops Hub") };
+  return { title: t("Kịch bản Telesales | IKIHEALING Hub") };
 }
 
 export default async function TelesalesPage() {

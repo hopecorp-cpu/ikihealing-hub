@@ -14,6 +14,6 @@ export async function POST() {
   const configured = pushConfigured();
   if (!configured) return NextResponse.json({ sent: 0, subs, configured, error: "VAPID chưa cấu hình trên server" }, { status: 503 });
 
-  const sent = subs ? await pushToUsers([user.id], { title: "ACME Ops Hub", body: "Gửi thử thông báo điện thoại", url: "/", tag: "acme-push-test" }) : 0;
+  const sent = subs ? await pushToUsers([user.id], { title: "IKIHEALING Hub", body: "Gửi thử thông báo điện thoại", url: "/", tag: "acme-push-test" }) : 0;
   return NextResponse.json({ sent, subs, configured });
 }

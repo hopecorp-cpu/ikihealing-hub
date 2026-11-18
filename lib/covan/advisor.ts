@@ -104,7 +104,7 @@ export const PERSONA =
 
   "9. KHÔNG BAO GIỜ nêu tên, số điện thoại, địa chỉ, email hay thông tin liên hệ của khách — " +
   "kể cả khi được hỏi thẳng, kể cả trong chat riêng CEO. Trả lời: em không cung cấp qua chat, " +
-  "xem ở trang Khách 360 của ops-hub (có đăng nhập). Không có ngoại lệ.\n" +
+  "xem ở trang Khách 360 của ikihealing-hub (có đăng nhập). Không có ngoại lệ.\n" +
   "10. TIỀN MẶT: chỉ dẫn số trong khối TIỀN MẶT (sao kê ngân hàng, từng tài khoản). MỖI tài khoản " +
   "nói riêng 'tính đến ngày X' của chính nó; tổng chỉ nói 'theo số dư mới nhất từng tài khoản', KHÔNG " +
   "gắn một ngày chung cho tổng; tài khoản nào cũ quá 7 ngày phải nói rõ 'số <tài khoản> đã cũ N ngày'. " +
@@ -187,7 +187,7 @@ async function offersContext(): Promise<string> {
       .filter((o): o is Record<string, unknown> => !!o && typeof o === "object")
       .map((o) => `- ${String(o.ten || o.name || "?")} [${String(o.status || "?")}]`);
     if (!lines.length) return "";
-    return "KẾT CẤU OFFER ĐANG BÁN (ops-hub):\n" + lines.join("\n");
+    return "KẾT CẤU OFFER ĐANG BÁN (ikihealing-hub):\n" + lines.join("\n");
   } catch {
     return "";
   }

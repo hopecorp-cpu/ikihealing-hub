@@ -7,7 +7,7 @@ import { getT } from "@/lib/i18n-server";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Danh bạ khách (hotline Zalo) | ACME Ops Hub") };
+  return { title: t("Danh bạ khách (hotline Zalo) | IKIHEALING Hub") };
 }
 
 export default async function DanhBaKhachPage() {

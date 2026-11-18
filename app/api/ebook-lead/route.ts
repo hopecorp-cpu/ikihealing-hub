@@ -172,7 +172,7 @@ export async function POST(req: Request) {
     try {
       const { lead: emailLead, isNew } = await themEmailDrip(emailOk, source, dongY.co && dongY.tinTuVan, sdtChuan || undefined);
       if (isNew && resendConfigured() && !emailLead.sent.includes(0)) {
-        const linkEmail = `https://ops-hub.example.com/api/ebook-lead?tai=1&s=${encodeURIComponent("email:" + source)}`;
+        const linkEmail = `https://ikihealing-hub.example.com/api/ebook-lead?tai=1&s=${encodeURIComponent("email:" + source)}`;
         const sach = sachCua(source);
 
         const g = await guiEmailNuoi(
@@ -196,6 +196,6 @@ export async function POST(req: Request) {
     console.error("[ebook-lead] insertAndAssign hỏng:", kq.error);
   }
 
-  const linkTai = `https://ops-hub.example.com/api/ebook-lead?tai=1&s=${encodeURIComponent(source)}`;
+  const linkTai = `https://ikihealing-hub.example.com/api/ebook-lead?tai=1&s=${encodeURIComponent(source)}`;
   return NextResponse.json({ ok: true, link: linkTai, dedup: (kq as any).dedup === true }, { headers: CORS });
 }

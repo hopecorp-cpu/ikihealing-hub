@@ -6,7 +6,7 @@ import { PLAYS, LEVERS, buildProfitSnapshot, evaluatePlays, getActivePlays, type
 import { TrendingUp, CircleDot, CheckCircle2, XCircle, HelpCircle } from "lucide-react";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Profit Playbook | ACME Ops Hub" };
+export const metadata = { title: "Profit Playbook | IKIHEALING Hub" };
 
 const STATUS_UI: Record<string, { label: string; cls: string }> = {
   "dang-do": { label: "Đang đo", cls: "bg-blue-100 text-blue-700" },

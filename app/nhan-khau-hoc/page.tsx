@@ -11,7 +11,7 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Nhân khẩu học khách hàng | ACME Ops Hub") };
+  return { title: t("Nhân khẩu học khách hàng | IKIHEALING Hub") };
 }
 
 const RANGES = [30, 90, 180];

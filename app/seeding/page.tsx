@@ -9,7 +9,7 @@ import SeedingGuide from "./SeedingGuide";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Cẩm nang Seeding đa kênh | ACME Ops Hub") };
+  return { title: t("Cẩm nang Seeding đa kênh | IKIHEALING Hub") };
 }
 
 export default async function SeedingPage({ searchParams }: { searchParams: { d?: string } }) {

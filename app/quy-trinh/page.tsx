@@ -8,7 +8,7 @@ import SopClient from "./SopClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Thư viện quy trình | ACME Ops Hub") };
+  return { title: t("Thư viện quy trình | IKIHEALING Hub") };
 }
 
 export default async function Page() {

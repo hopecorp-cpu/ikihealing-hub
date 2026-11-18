@@ -10,7 +10,7 @@ import { Heart, Repeat, UserMinus, UserPlus, Clock, MessageSquare } from "lucide
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Trải nghiệm khách hàng (CX) | ACME Ops Hub") };
+  return { title: t("Trải nghiệm khách hàng (CX) | IKIHEALING Hub") };
 }
 
 type Cust = { orders: Set<string>; first: string; last: string };

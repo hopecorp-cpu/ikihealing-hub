@@ -9,7 +9,7 @@ import LogClient from "./LogClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Nhật ký AI | ACME Ops Hub") };
+  return { title: t("Nhật ký AI | IKIHEALING Hub") };
 }
 
 export default async function Page() {

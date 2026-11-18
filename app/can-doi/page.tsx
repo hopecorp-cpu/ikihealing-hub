@@ -6,7 +6,7 @@ import { RefreshCw } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Cân đối nhanh | ACME Ops Hub") };
+  return { title: t("Cân đối nhanh | IKIHEALING Hub") };
 }
 
 export default async function CanDoiPage() {

@@ -16,7 +16,7 @@ import { layDoanhThuNhieuThang } from "@/lib/doanh-thu";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bảng điều hành | ACME Ops Hub") };
+  return { title: t("Bảng điều hành | IKIHEALING Hub") };
 }
 
 const WHITELIST = FINANCE_WHITELIST;

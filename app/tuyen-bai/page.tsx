@@ -8,7 +8,7 @@ import PlanClient from "./PlanClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Tuyến bài | ACME Ops Hub") };
+  return { title: t("Tuyến bài | IKIHEALING Hub") };
 }
 
 export default async function Page() {

@@ -11,7 +11,7 @@ import CompClient, { type PersonComp } from "./CompClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Cơ chế thưởng phòng ban | ACME Ops Hub") };
+  return { title: t("Cơ chế thưởng phòng ban | IKIHEALING Hub") };
 }
 
 export default async function Page({ searchParams }: { searchParams: { cycle?: string } }) {

@@ -7,7 +7,7 @@ import { FUNNELS, getFunnel } from "@/lib/funnel";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Phễu mua hàng | ACME Ops Hub") };
+  return { title: t("Phễu mua hàng | IKIHEALING Hub") };
 }
 
 function pct(a: number, b: number) { return b > 0 ? Math.round((a / b) * 100) : 0; }

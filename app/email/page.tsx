@@ -8,7 +8,7 @@ import EmailClient from "./EmailClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Email công ty | ACME Ops Hub") };
+  return { title: t("Email công ty | IKIHEALING Hub") };
 }
 
 export default async function EmailPage() {

@@ -9,7 +9,7 @@ export const dynamic = "force-dynamic";
 export const maxDuration = 60;
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Lọc CV bằng AI | ACME Ops Hub") };
+  return { title: t("Lọc CV bằng AI | IKIHEALING Hub") };
 }
 
 export type CvJob = { id: number; title: string; jd_text: string; must_have?: string; nice_have?: string; status?: string; public_token?: string; is_public?: boolean; public_desc?: string };

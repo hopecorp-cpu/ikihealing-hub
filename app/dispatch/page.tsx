@@ -9,7 +9,7 @@ import DispatchClient from "./DispatchClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Dispatch — Hub điều phối | ACME Ops Hub") };
+  return { title: t("Dispatch — Hub điều phối | IKIHEALING Hub") };
 }
 
 export default async function Page() {

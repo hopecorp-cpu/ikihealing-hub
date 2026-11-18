@@ -109,7 +109,7 @@ export const EXIT_POPUP_MAU = `<div id="novaExit" role="dialog" aria-modal="true
   // Quà đổi từ "cẩm nang" sang ebook 100 món (03/09/2026): 367 phiên blog/tuần mà cẩm nang thu 0,
   // trong khi ebook đã 313 lượt tải. Đi qua /api/ebook-lead để khách nhận LINK TẢI NGAY + email +
   // (nếu để số) vào máy chia sale — cùng cửa với landing, không dựng đường thứ hai.
-  var ENDPOINT='https://ops-hub.example.com/api/ebook-lead';
+  var ENDPOINT='https://ikihealing-hub.example.com/api/ebook-lead';
   var el=document.getElementById('novaExit'); if(!el) return;
   var shown=false, done=false;
   function open(){ if(shown) return; shown=true; try{localStorage.setItem('nova_exit_v1',String(Date.now()));}catch(e){}

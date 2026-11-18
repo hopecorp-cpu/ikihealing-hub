@@ -10,7 +10,7 @@ import { vnDateStr } from "@/lib/payroll";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Link mời Zalo | ACME Ops Hub") };
+  return { title: t("Link mời Zalo | IKIHEALING Hub") };
 }
 
 const KENH = [

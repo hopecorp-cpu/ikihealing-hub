@@ -13,7 +13,7 @@ import CalendarClient from "./CalendarClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Lịch chiến dịch | ACME Ops Hub") };
+  return { title: t("Lịch chiến dịch | IKIHEALING Hub") };
 }
 
 export default async function Page() {

@@ -8,7 +8,7 @@ import { Stat } from "@/components/stat";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Báo cáo hiệu suất đăng bài | ACME Ops Hub") };
+  return { title: t("Báo cáo hiệu suất đăng bài | IKIHEALING Hub") };
 }
 
 const MKT_DEPT = "Marketing";

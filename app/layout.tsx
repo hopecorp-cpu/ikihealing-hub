@@ -21,7 +21,7 @@ import { getLocale } from "@/lib/i18n-server";
 export function generateMetadata() {
   const { t } = getT();
   return {
-  title: "Ops Hub",
+  title: "IKIHEALING Hub",
   description: t("Quản trị nội bộ — Chấm công · Lương · KPI · Insights"),
   manifest: "/manifest.webmanifest",
   icons: {

@@ -105,7 +105,7 @@ export default function ZaloNav({
           <ChevronDown className="h-4 w-4 shrink-0 text-slate-400" />
         </div>
         <Link href="/" className="mt-2 flex items-center gap-1.5 px-1 text-[11px] text-slate-400 hover:text-slate-600">
-          <ArrowLeft className="h-3 w-3" /> {t("Về Ops Hub")}
+          <ArrowLeft className="h-3 w-3" /> {t("Về IKIHEALING Hub")}
         </Link>
       </div>
     </aside>
@@ -138,7 +138,7 @@ export function ZaloThanhTop({ ten }: { ten: string }) {
       >
         <Smartphone className="h-4 w-4" /> {t("Điện thoại")}
       </button>
-      <Link href="/" className="rounded-lg p-2 text-slate-400 hover:bg-slate-50 hover:text-slate-600" title={t("Về Ops Hub")}>
+      <Link href="/" className="rounded-lg p-2 text-slate-400 hover:bg-slate-50 hover:text-slate-600" title={t("Về IKIHEALING Hub")}>
         <LogOut className="h-4 w-4" />
       </Link>
     </header>

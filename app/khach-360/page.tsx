@@ -16,7 +16,7 @@ import { chamTep, demTheoKhuc, CHU_KY_NGAY, type KhachRFM, type PhanKhuc } from 
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Hồ sơ khách 360 | ACME Ops Hub") };
+  return { title: t("Hồ sơ khách 360 | IKIHEALING Hub") };
 }
 
 const STATUS_VI: Record<string, string> = { delivered: "đã giao", returned: "hoàn", cancelled: "huỷ", transit: "đang giao", other: "vấn đề" };

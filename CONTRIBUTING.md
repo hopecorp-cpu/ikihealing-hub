@@ -1,6 +1,6 @@
 # Góp ý và đóng góp
 
-Cảm ơn bạn đã dùng thử Ops Hub.
+Cảm ơn bạn đã dùng thử IKIHEALING Hub.
 
 ## Góp ý tính năng hoặc báo lỗi
 

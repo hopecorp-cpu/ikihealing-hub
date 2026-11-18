@@ -9,7 +9,7 @@ import CloserClient from "./CloserClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Kịch bản CLOSER | ACME Ops Hub") };
+  return { title: t("Kịch bản CLOSER | IKIHEALING Hub") };
 }
 
 export default async function Page() {

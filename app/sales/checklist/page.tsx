@@ -9,7 +9,7 @@ import { getT } from "@/lib/i18n-server";
 import ChecklistClient from "./ChecklistClient";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Checklist Sale | ACME Ops Hub" };
+export const metadata = { title: "Checklist Sale | IKIHEALING Hub" };
 
 export default async function ChecklistPage() {
   const { t } = getT();

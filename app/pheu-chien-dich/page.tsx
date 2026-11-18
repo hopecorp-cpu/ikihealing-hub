@@ -10,7 +10,7 @@ import { layDoanhThuNhieuThang } from "@/lib/doanh-thu";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Phễu & Chiến dịch | ACME Ops Hub") };
+  return { title: t("Phễu & Chiến dịch | IKIHEALING Hub") };
 }
 
 export default async function PheuPage({ searchParams }: { searchParams: { m?: string } }) {

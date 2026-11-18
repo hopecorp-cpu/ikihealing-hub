@@ -8,7 +8,7 @@ import ViecClient from "./ViecClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Việc hôm nay | ACME Ops Hub") };
+  return { title: t("Việc hôm nay | IKIHEALING Hub") };
 }
 
 export default async function Page() {

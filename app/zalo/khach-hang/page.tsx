@@ -11,7 +11,7 @@ import { MessageSquare, Search, UserCheck } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Khách Zalo | ACME Ops Hub") };
+  return { title: t("Khách Zalo | IKIHEALING Hub") };
 }
 
 const boDau = (s: string) =>

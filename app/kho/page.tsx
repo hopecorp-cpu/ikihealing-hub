@@ -15,7 +15,7 @@ import KhoTonExcel from "./KhoTonExcel";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Quản lý Kho | ACME Ops Hub") };
+  return { title: t("Quản lý Kho | IKIHEALING Hub") };
 }
 
 export default async function KhoPage({ searchParams }: { searchParams: { m?: string } }) {

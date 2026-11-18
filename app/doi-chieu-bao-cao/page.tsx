@@ -9,7 +9,7 @@ import { ClipboardCheck, AlertTriangle, CheckCircle2, Info } from "lucide-react"
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Đối chiếu báo cáo ↔ số đo | ACME Ops Hub") };
+  return { title: t("Đối chiếu báo cáo ↔ số đo | IKIHEALING Hub") };
 }
 
 const val = (m: MetricRow, v: number) => (m.money ? fmtVND(v) : String(v));

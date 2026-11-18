@@ -8,7 +8,7 @@ import { MessageSquare, Clock, AlertTriangle, ThumbsUp } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Phễu tương tác | ACME Ops Hub") };
+  return { title: t("Phễu tương tác | IKIHEALING Hub") };
 }
 
 type FbData = {

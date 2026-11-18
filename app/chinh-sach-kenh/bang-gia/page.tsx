@@ -9,7 +9,7 @@ import NutIn from "./NutIn";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Bảng giá v4 cho sale/đại lý | ACME Ops Hub") };
+  return { title: t("Bảng giá v4 cho sale/đại lý | IKIHEALING Hub") };
 }
 
 const vnd = (n: number | null) => (n == null ? "—" : n.toLocaleString("vi-VN") + "đ");

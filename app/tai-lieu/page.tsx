@@ -8,7 +8,7 @@ import DocClient from "./DocClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Trung tâm tài liệu | ACME Ops Hub") };
+  return { title: t("Trung tâm tài liệu | IKIHEALING Hub") };
 }
 
 export default async function Page() {

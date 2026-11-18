@@ -9,7 +9,7 @@ import type { CustomerStory } from "@/lib/case-study";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Thư viện câu chuyện khách | ACME Ops Hub") };
+  return { title: t("Thư viện câu chuyện khách | IKIHEALING Hub") };
 }
 
 export default async function Page() {

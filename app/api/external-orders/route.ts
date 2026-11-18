@@ -20,7 +20,7 @@ export async function POST(req: Request) {
 
   const noiDungCk = String(b.content || "").toUpperCase();
   if (/\bNOVA\b/.test(noiDungCk)) {
-    return NextResponse.json({ ok: true, boQua: "đơn cổng web example.com — ops-hub tự xử lý (chống đếm đôi + tên hàng đúng)" });
+    return NextResponse.json({ ok: true, boQua: "đơn cổng web example.com — ikihealing-hub tự xử lý (chống đếm đôi + tên hàng đúng)" });
   }
 
   const action = b.action === "paid" ? "paid" : b.action === "lead" ? "lead" : "create";

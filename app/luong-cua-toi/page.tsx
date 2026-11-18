@@ -10,7 +10,7 @@ import { Wallet, TrendingUp, Trophy } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Lương của tôi | ACME Ops Hub") };
+  return { title: t("Lương của tôi | IKIHEALING Hub") };
 }
 
 const tr = (n: number) => `${(Math.round(n / 1e5) / 10).toLocaleString("vi-VN")}tr`;

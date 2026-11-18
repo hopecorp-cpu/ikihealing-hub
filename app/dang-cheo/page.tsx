@@ -10,7 +10,7 @@ import DangCheoClient from "./DangCheoClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Đăng chéo blog | ACME Ops Hub") };
+  return { title: t("Đăng chéo blog | IKIHEALING Hub") };
 }
 
 export default async function DangCheoPage() {

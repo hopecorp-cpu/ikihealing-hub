@@ -3,7 +3,7 @@ import RevenueManager from "./RevenueManager";
 
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Doanh thu — Kế toán nhập | ACME Ops Hub") };
+  return { title: t("Doanh thu — Kế toán nhập | IKIHEALING Hub") };
 }
 
 export default function DoanhThuPage() {

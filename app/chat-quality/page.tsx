@@ -11,7 +11,7 @@ import { Users, ShieldAlert } from "lucide-react";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("AI chấm tư vấn sale | ACME Ops Hub") };
+  return { title: t("AI chấm tư vấn sale | IKIHEALING Hub") };
 }
 
 const saleOf = (r: any) => saleCuaNick(r.account_id, r.last_message_time || r.analyzed_at) || r.account_name || "?";

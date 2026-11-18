@@ -10,7 +10,7 @@ import TriNhoClient from "./Client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Đồ thị trí nhớ | ACME Ops Hub") };
+  return { title: t("Đồ thị trí nhớ | IKIHEALING Hub") };
 }
 
 export default async function Page() {

@@ -8,7 +8,7 @@ import Client from "./Client";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Kết cấu bán hàng | ACME Ops Hub") };
+  return { title: t("Kết cấu bán hàng | IKIHEALING Hub") };
 }
 
 export default async function Page() {

@@ -10,7 +10,7 @@ import ThiTran from "./ThiTran";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: `${t("Thị trấn máy")} | ACME Ops Hub` };
+  return { title: `${t("Thị trấn máy")} | IKIHEALING Hub` };
 }
 
 export default async function Page() {

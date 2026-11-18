@@ -10,7 +10,7 @@ import PhapCheClient from "./PhapCheClient";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Sổ pháp chế | ACME Ops Hub") };
+  return { title: t("Sổ pháp chế | IKIHEALING Hub") };
 }
 
 export default async function Page() {

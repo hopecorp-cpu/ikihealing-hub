@@ -6,7 +6,7 @@ import { gomTuan, docNhap, demNguoiNhan } from "@/lib/ban-tin-tuan";
 import BanTinClient from "./BanTinClient";
 
 export const dynamic = "force-dynamic";
-export const metadata = { title: "Bản tin email tuần | ACME Ops Hub" };
+export const metadata = { title: "Bản tin email tuần | IKIHEALING Hub" };
 
 export default async function Page({ searchParams }: { searchParams: { tuan?: string } }) {
   const user = await getCurrentUser();

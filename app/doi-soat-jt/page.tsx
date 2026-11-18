@@ -10,7 +10,7 @@ import { Stat } from "@/components/stat";
 export const dynamic = "force-dynamic";
 export function generateMetadata() {
   const { t } = getT();
-  return { title: t("Đối soát J&T | ACME Ops Hub") };
+  return { title: t("Đối soát J&T | IKIHEALING Hub") };
 }
 
 export default async function JtPage({ searchParams }: { searchParams: { m?: string } }) {
